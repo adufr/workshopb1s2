@@ -73,9 +73,59 @@
 				</div>
 			</main>
 
+			<button type="button" name="button" class="waves-effect waves-light btn modal-trigger blue" href="#modal1">Modal</button>
+
+			<div id="modal1" class="modal">
+				<div class="modal-content">
+					<div class="row">
+						<form class="" action="" method="post">
+							<div class="input-field col s6">
+								<input id="1" type="text" name="identifiant" class="validate" value="">
+								<label for="1">Identifiant</label>
+							</div>
+							<div class="input-field col s6">
+								<input id="2" type="text" name="mdp" class="validate" value="">
+								<label for="2">Mot de Passe</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<script>$('.ui.modal')
+			  .modal()
+			;</script>
+	<div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Modal Title
+  </div>
+  <div class="image content">
+    <div class="image">
+      An image can appear on left or an icon
+    </div>
+    <div class="description">
+      A description can appear on the right
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui button">Cancel</div>
+    <div class="ui button">OK</div>
+  </div>
+</div>
+
 	<?php
 		include('footer.php');
 	?>
+	<script>
+	$('.special.modal')
+		.modal({
+			centered: false
+		})
+		.modal('show')
+	;
+	</script>
 
 </body>
 </html>
