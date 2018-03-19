@@ -1,7 +1,7 @@
+<html class="no-js">
 <?php
 	include('header.php');
 ?>
-<body>
 	<div class="fh5co-hero">
 		<div class="fh5co-overlay"></div>
 		<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
@@ -93,39 +93,8 @@
 			</div>
 
 
-			<script>$('.ui.modal')
-			  .modal()
-			;</script>
-	<div class="ui modal">
-  <i class="close icon"></i>
-  <div class="header">
-    Modal Title
-  </div>
-  <div class="image content">
-    <div class="image">
-      An image can appear on left or an icon
-    </div>
-    <div class="description">
-      A description can appear on the right
-    </div>
-  </div>
-  <div class="actions">
-    <div class="ui button">Cancel</div>
-    <div class="ui button">OK</div>
-  </div>
-</div>
+
 
 	<?php
 		include('footer.php');
 	?>
-	<script>
-	$('.special.modal')
-		.modal({
-			centered: false
-		})
-		.modal('show')
-	;
-	</script>
-
-</body>
-</html>

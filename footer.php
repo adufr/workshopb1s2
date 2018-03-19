@@ -45,10 +45,21 @@
 <script src="js/main.js"></script>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-<script type="text/javascript" src="materialize/js/app.js"></script>
+<script type="text/javascript" src="modal/modal.js"></script>
+<script type="text/javascript" src="modal/materialize.min.js"></script>
 <script>
 $(document).ready(function(){
     $(".modal").modal();
 });
 </script>
+<script>
+$('.special.modal')
+  .modal({
+    centered: false
+  })
+  .modal('show')
+;
+</script>
+
+</body>
+</html>
