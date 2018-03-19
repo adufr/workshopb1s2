@@ -1,0 +1,72 @@
+.fh5co-main-service {
+  margin-bottom: 2em;
+  float: left;
+  width: 100%;
+}
+.fh5co-main-service .fh5co-block-links {
+  position: relative;
+  display: block;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #2e2e2e;
+  margin-top: 0;
+}
+.fh5co-main-service .fh5co-block-links .icon-circle {
+  display: table;
+  background: #87b6c4;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.fh5co-main-service .fh5co-block-links .icon-circle i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 40px;
+  color: #ffffff;
+}
+.fh5co-main-service .fh5co-block-links h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+.fh5co-main-service .fh5co-block-links p {
+  color: #7b7b7b;
+}
+.fh5co-main-service .fh5co-block-links .learn-more {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 13px;
+  display: inline-block;
+  background: #ebebeb;
+  padding: 7px 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.csstransitions .fh5co-main-service .fh5co-block-links:hover {
+  margin-top: -30px;
+}
+.fh5co-main-service .fh5co-block-links:hover .icon-circle {
+  background: #f66d52;
+}
+.csstransitions .fh5co-main-service .fh5co-block-links:hover .icon-circle {
+  width: 120px;
+  height: 120px;
+}
+.fh5co-main-service .fh5co-block-links:hover .learn-more {
+  background: #f66d52;
+  color: #fff;
+}

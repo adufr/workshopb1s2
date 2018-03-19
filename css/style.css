@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -110,7 +110,7 @@ figure {
   right: 0;
   z-index: 1;
   background: rgba(66, 64, 64, 0.9);
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(76, 160, 234, 1); //COULEUR BACKGROUND
 }
 
 .fh5co-cover {
