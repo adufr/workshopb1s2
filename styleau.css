@@ -96,7 +96,12 @@
 
 .logos
 {
-  height: 70%;
-  width: 70%;
+  height: 72%;
+  width: 72%;
   margin-top: 15%;
+}
+
+.modalConnexion {
+  height: 50%;
+  width: 50%;
 }

@@ -19,18 +19,6 @@
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
-                  <img class="logos" src="images/logos/ajax.png" alt="ajax.png">
-                </div>
-                <h2>Ajax</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-            <div class="fh5co-main-service">
-              <a href="#" class="fh5co-block-links text-center">
-                <div class="icon-circle">
                   <img class="logos" src="images/logos/batch.png" alt="batch.png">
                 </div>
                 <h2>Batch</h2>
@@ -139,31 +127,7 @@
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
-                  <img class="logos" src="images/logos/swift.png" alt="swift.png">
-                </div>
-                <h2>Swift</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-            <div class="fh5co-main-service">
-              <a href="#" class="fh5co-block-links text-center">
-                <div class="icon-circle">
-                  <img class="logos" src="images/logos/symfony.png" alt="symfony.png">
-                </div>
-                <h2>Symfony</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-            <div class="fh5co-main-service">
-              <a href="#" class="fh5co-block-links text-center">
-                <div class="icon-circle">
-                  <img class="logos" src="images/logos/VisualBasic.png" alt="vb.png">
+                  <img class="logos" src="images/logos/visualBasic.png" alt="vb.png">
                 </div>
                 <h2>VisualBasic .NET</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -175,11 +139,11 @@
 <!-- 2e catégorie : les frameworks -->
           <div class="col-md-12">
             <div class="fh5co-heading text-center">
-                <h2 class="fh5co-heading-title">frameworks</h2>
+                <h2 class="fh5co-heading-title">Frameworks</h2>
               </div>
           </div>
 
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+          <div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
@@ -191,25 +155,13 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+          <div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
-                  <img class="logos" src="images/logos/react.png" alt="react.png">
+                  <img class="logos" src="images/logos/jsfw.png" alt="jsfw.png">
                 </div>
                 <h2>Javascript frameworks</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-            <div class="fh5co-main-service">
-              <a href="#" class="fh5co-block-links text-center">
-                <div class="icon-circle">
-                  <img class="logos" src="images/logos/VisualBasic.png" alt="vb.png">
-                </div>
-                <h2>Java frameworks</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </a>
             </div>
@@ -223,7 +175,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+          <div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
@@ -235,7 +187,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+          <div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
@@ -247,13 +199,13 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+          <div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
-                  <img class="logos" src="images/logos/appmobile.png" alt="appmobile.png">
+                  <img class="logos" src="images/logos/Swift.png" alt="appmobile.png">
                 </div>
-                <h2>Applications mobile</h2>
+                <h2>Developpement mobile</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </a>
             </div>
