@@ -119,112 +119,106 @@ if (isset($_POST['form_inscription'])) {
 
 }
 
-
-
-
 ?>
 
 
 <div class="container pb-lg">
 	<div class="row">
 		<div align="center" class="form-group col-md-12"><h1>Créez votre compte</h1></div>
-	</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-<div class="col-md-1 col-xs-2 col-sm-2"></div>
 
-<div class="col-md-10 col-xs-8 col-sm-8">
+		</br></br></br></br></br>	</br>
 
-<form method="POST">
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Nom</label>
-      <input type="text" name="uti_nom" required="" class="form-control" id="inputEmail4" placeholder="Dubois" value="<?php if(isset($uti_nom)){ echo $uti_nom; }?>">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Prénom</label>
-      <input type="text" name="uti_prenom" required="" class="form-control" id="inputPassword4" placeholder="Alain" value="<?php if(isset($uti_prenom)){ echo $uti_prenom; }?>">
-    </div>
-  </div>
-  <div class="form-group col-md-12">
-    <label for="inputAddress">Adresse Mail</label>
-    <input type="email" name="uti_mail" required="" class="form-control" id="inputAddress" placeholder="alain.dubois@epsi.fr" value="<?php if(isset($uti_mail)){ echo $uti_mail; }?>">
-  </div>
-	<div class="form-group col-md-6">
-		<label for="inputEmail4">Mot de Passe</label>
-		<input type="password" name="uti_mdp" required="" class="form-control" id="inputEmail4">
+		<div class="col-md-1 col-xs-2 col-sm-2"></div>
+
+		<div class="col-md-10 col-xs-8 col-sm-8">
+			<form method="POST">
+  		<div class="form-row">
+    		<div class="form-group col-md-6">
+      		<label for="inputEmail4">Nom</label>
+      		<input type="text" name="uti_nom" required="" class="form-control" id="inputEmail4" placeholder="Dubois" value="<?php if(isset($uti_nom)){ echo $uti_nom; }?>">
+    		</div>
+
+    		<div class="form-group col-md-6">
+      		<label for="inputPassword4">Prénom</label>
+					<input type="text" name="uti_prenom" required="" class="form-control" id="inputPassword4" placeholder="Alain" value="<?php if(isset($uti_prenom)){ echo $uti_prenom; }?>">
+    		</div>
+  		</div>
+
+  		<div class="form-group col-md-12">
+    		<label for="inputAddress">Adresse Mail</label>
+    		<input type="email" name="uti_mail" required="" class="form-control" id="inputAddress" placeholder="alain.dubois@epsi.fr" value="<?php if(isset($uti_mail)){ echo $uti_mail; }?>">
+  		</div>
+
+			<div class="form-group col-md-6">
+				<label for="inputEmail4">Mot de Passe</label>
+				<input type="password" name="uti_mdp" required="" class="form-control" id="inputEmail4">
+			</div>
+
+			<div class="form-group col-md-6">
+				<label for="inputPassword4">Confirmation du mot de passe</label>
+				<input type="password" name="uti_mdp2" required="" class="form-control" id="inputPassword4">
+			</div>
+
+		  <div class="form-row">
+				<div class="form-group col-md-4">
+		      <label for="inputState">Statut</label>
+		      <select name="uti_classe" id="inputState" class="form-control">
+						<option value="null" <?php if (isset($uti_classe) && $uti_classe == "null"){echo "selected";} ?>>--Sélectionnez votre statut--
+						<option value="B1" <?php if (isset($uti_classe) && $uti_classe == "B1"){echo "selected";} ?>>B1
+						<option value="B2" <?php if (isset($uti_classe) && $uti_classe == "B2"){echo "selected";} ?>>B2
+						<option value="B3" <?php if (isset($uti_classe) && $uti_classe == "B3"){echo "selected";} ?>>B3
+						<option value="I4" <?php if (isset($uti_classe) && $uti_classe == "I4"){echo "selected";} ?>>I4
+						<option value="I5" <?php if (isset($uti_classe) && $uti_classe == "I5"){echo "selected";} ?>>I5
+						<option value="WIS1" <?php if (isset($uti_classe) && $uti_classe == "WIS1"){echo "selected";} ?>>WIS1
+						<option value="WIS2" <?php if (isset($uti_classe) && $uti_classe == "WIS2"){echo "selected";} ?>>WIS2
+						<option value="WIS3" <?php if (isset($uti_classe) && $uti_classe == "WIS3"){echo "selected";} ?>>WIS3
+						<option value="Enseignant" <?php if (isset($uti_classe) && $uti_classe == "Enseignant"){echo "selected";} ?>>Enseignant
+		      </select>
+    		</div>
+
+    		<div class="form-group col-md-4">
+		      <label for="inputState">Sexe</label>
+		      <select name="uti_sexe" id="inputState" class="form-control">
+						<option value="null" <?php if (isset($uti_sexe) && $uti_sexe == "null"){echo "selected";} ?>>--Sélectionnez votre sexe--
+						<option value="Homme" <?php if (isset($uti_sexe) && $uti_sexe == "Homme"){echo "selected";} ?>>Homme
+						<option value="Femme" <?php if (isset($uti_sexe) && $uti_sexe == "Femme"){echo "selected";} ?>>Femme
+						<option value="Autre" <?php if (isset($uti_sexe) && $uti_sexe == "Autre"){echo "selected";} ?>>Autre
+		      </select>
+		    </div>
+
+				<div class="form-group col-md-4">
+		      <label for="inputState">Campus</label>
+		      <select name="uti_campus" id="inputState" class="form-control">
+						<option value="null" <?php if (isset($uti_campus) && $uti_campus == "null"){echo "selected";} ?>>--Sélectionnez votre campus--
+						<option value="Lyon" <?php if (isset($uti_campus) && $uti_campus == "Lyon"){echo "selected";} ?>>Lyon
+						<option value="Paris" <?php if (isset($uti_campus) && $uti_campus == "Paris"){echo "selected";} ?>>Paris
+						<option value="Lille" <?php if (isset($uti_campus) && $uti_campus == "Lille"){echo "selected";} ?>>Lille
+						<option value="Arras" <?php if (isset($uti_campus) && $uti_campus == "Arras"){echo "selected";} ?>>Arras
+						<option value="Bordeaux" <?php if (isset($uti_campus) && $uti_campus == "Bordeaux"){echo "selected";} ?>>Bordeaux
+						<option value="Brest" <?php if (isset($uti_campus) && $uti_campus == "Brest"){echo "selected";} ?>>Brest
+						<option value="Grenoble" <?php if (isset($uti_campus) && $uti_campus == "Grenoble"){echo "selected";} ?>>Grenoble
+						<option value="Nantes" <?php if (isset($uti_campus) && $uti_campus == "Nantes"){echo "selected";} ?>>Nantes
+						<option value="Montpellier" <?php if (isset($uti_campus) && $uti_campus == "Montpellier"){echo "selected";} ?>>Montpellier
+		      </select>
+    		</div>
+
+				</br></br></br></br></br></br>
+
+				<div class="form-group col-md-4">
+					<button type="submit" name="form_inscription" class="btn btn-primary modal-trigger">S'inscrire</button>
+				</div>
+  		</div>
+		</form>
 	</div>
-	<div class="form-group col-md-6">
-		<label for="inputPassword4">Confirmation du mot de passe</label>
-		<input type="password" name="uti_mdp2" required="" class="form-control" id="inputPassword4">
-	</div>
-  <div class="form-row">
-		<div class="form-group col-md-4">
-      <label for="inputState">Statut</label>
-      <select name="uti_classe" id="inputState" class="form-control">
-				<option value="null" <?php if (isset($uti_classe) && $uti_classe == "null"){echo "selected";} ?>>--Sélectionnez votre statut--
-				<option value="B1" <?php if (isset($uti_classe) && $uti_classe == "B1"){echo "selected";} ?>>B1
-				<option value="B2" <?php if (isset($uti_classe) && $uti_classe == "B2"){echo "selected";} ?>>B2
-				<option value="B3" <?php if (isset($uti_classe) && $uti_classe == "B3"){echo "selected";} ?>>B3
-				<option value="I4" <?php if (isset($uti_classe) && $uti_classe == "I4"){echo "selected";} ?>>I4
-				<option value="I5" <?php if (isset($uti_classe) && $uti_classe == "I5"){echo "selected";} ?>>I5
-				<option value="WIS1" <?php if (isset($uti_classe) && $uti_classe == "WIS1"){echo "selected";} ?>>WIS1
-				<option value="WIS2" <?php if (isset($uti_classe) && $uti_classe == "WIS2"){echo "selected";} ?>>WIS2
-				<option value="WIS3" <?php if (isset($uti_classe) && $uti_classe == "WIS3"){echo "selected";} ?>>WIS3
-				<option value="Enseignant" <?php if (isset($uti_classe) && $uti_classe == "Enseignant"){echo "selected";} ?>>Enseignant
-      </select>
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">Sexe</label>
-      <select name="uti_sexe" id="inputState" class="form-control">
-				<option value="null" <?php if (isset($uti_sexe) && $uti_sexe == "null"){echo "selected";} ?>>--Sélectionnez votre sexe--
-				<option value="Homme" <?php if (isset($uti_sexe) && $uti_sexe == "Homme"){echo "selected";} ?>>Homme
-				<option value="Femme" <?php if (isset($uti_sexe) && $uti_sexe == "Femme"){echo "selected";} ?>>Femme
-				<option value="Autre" <?php if (isset($uti_sexe) && $uti_sexe == "Autre"){echo "selected";} ?>>Autre
-      </select>
-    </div>
-		<div class="form-group col-md-4">
-      <label for="inputState">Campus</label>
-      <select name="uti_campus" id="inputState" class="form-control">
-				<option value="null" <?php if (isset($uti_campus) && $uti_campus == "null"){echo "selected";} ?>>--Sélectionnez votre campus--
-				<option value="Lyon" <?php if (isset($uti_campus) && $uti_campus == "Lyon"){echo "selected";} ?>>Lyon
-				<option value="Paris" <?php if (isset($uti_campus) && $uti_campus == "Paris"){echo "selected";} ?>>Paris
-				<option value="Lille" <?php if (isset($uti_campus) && $uti_campus == "Lille"){echo "selected";} ?>>Lille
-				<option value="Arras" <?php if (isset($uti_campus) && $uti_campus == "Arras"){echo "selected";} ?>>Arras
-				<option value="Bordeaux" <?php if (isset($uti_campus) && $uti_campus == "Bordeaux"){echo "selected";} ?>>Bordeaux
-				<option value="Brest" <?php if (isset($uti_campus) && $uti_campus == "Brest"){echo "selected";} ?>>Brest
-				<option value="Grenoble" <?php if (isset($uti_campus) && $uti_campus == "Grenoble"){echo "selected";} ?>>Grenoble
-				<option value="Nantes" <?php if (isset($uti_campus) && $uti_campus == "Nantes"){echo "selected";} ?>>Nantes
-				<option value="Montpellier" <?php if (isset($uti_campus) && $uti_campus == "Montpellier"){echo "selected";} ?>>Montpellier
-      </select>
-    </div>
-	</br>
-</br>
-</br>
-</br></br>
-</br>
-		<div class="form-group col-md-4">
-			<button type="submit" name="form_inscription" class="btn btn-primary modal-trigger">S'inscrire</button>
-		</div>
-  </div>
-</form>
-</div>
 
-<div class="col-md-1 col-xs-2 col-sm-2"></div>
+	<div class="col-md-1 col-xs-2 col-sm-2"></div>
 
 </div>
 </div>
-</br>
-</br></br>
-</br>
-<div id="comptecree" class="modal">
-	<div class="col-md-12">
-			<h1>Votre compte à bien été créé !</h1>
-	</div>
-</div>
+
+</br></br></br></br>
+
+
 
 <?php
 if (isset($erreur)) {
