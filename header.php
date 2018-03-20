@@ -81,7 +81,7 @@
       <div class="container">
         <div class="nav-header">
           <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-          <h1 id="fh5co-logo"><a href="index.html">Pentagon</a></h1>
+          <h1 id="fh5co-logo"><a href="index.php">Pentagon</a></h1>
           <!-- START #fh5co-menu-wrap -->
           <nav id="fh5co-menu-wrap" role="navigation">
             <ul class="sf-menu" id="fh5co-primary-menu">
@@ -120,9 +120,8 @@
                   <li><a href="#">Photography</a></li>
                 </ul>
               </li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a class="modal-trigger espace" href="#connexion">Connexion</a></li>
+							<li><a class="modal-trigger" href="inscription.php">Inscription</a></li>
             </ul>
           </nav>
         </div>

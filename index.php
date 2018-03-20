@@ -73,19 +73,20 @@
 				</div>
 			</main>
 
-			<button type="button" name="button" class="waves-effect waves-light btn modal-trigger blue" href="#modal1">Modal</button>
+			<button type="button" name="button" class="waves-effect waves-light btn modal-trigger blue" href="#connexion">Modal</button>
 
-			<div id="modal1" class="modal">
+			<div id="connexion" class="modal">
 				<div class="modal-content">
 					<div class="row">
+						<h2 align="center">Connexion</h2>
 						<form class="" action="" method="post">
-							<div class="input-field col s6">
-								<input id="1" type="text" name="identifiant" class="validate" value="">
+							<div class="input-field col s6" align="center">
 								<label for="1">Identifiant</label>
+								<input id="1" type="text" name="identifiant" class="validate" value="">
 							</div>
-							<div class="input-field col s6">
-								<input id="2" type="text" name="mdp" class="validate" value="">
+							<div class="input-field col s6" align="center">
 								<label for="2">Mot de Passe</label>
+								<input id="2" type="text" name="mdp" class="validate" value="">
 							</div>
 						</form>
 					</div>
