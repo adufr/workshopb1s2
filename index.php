@@ -22,7 +22,7 @@ $(document).ready(function() {
 <!-- Header -->
 <section id="header">
 	<header>
-		<h1>My hElPSI</h1>
+		<h1>My HELPSI</h1>
 		<p>By nous</p>
 	</header>
 	<footer>
@@ -33,7 +33,7 @@ $(document).ready(function() {
 <!-- Banner -->
 <section id="banner" class='js-scrollTo'>
 	<header>
-		<h2>Bienvenue sur My hElPSI</h2>
+		<h2>Bienvenue sur My HELPSI</h2>
 		</br>
 	</header>
 	<p>	Vous pouvez rechercher des forums,
