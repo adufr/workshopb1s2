@@ -21,21 +21,45 @@
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
-                  <img class="logos" src="images/logos/batch.png" alt="batch.png">
+                  <img class="logos" src="images/logos/html_css.png" alt="html_css.png">
                 </div>
-                <h2>Batch</h2>
+                <h2>HTML & CSS</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </a>
             </div>
           </div>
 
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+					<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
-                  <img class="logos" src="images/logos/html_css.png" alt="html_css.png">
+                  <img class="logos" src="images/logos/php.png" alt="php.png">
                 </div>
-                <h2>HTML & CSS</h2>
+                <h2>PHP</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </a>
+            </div>
+          </div>
+
+					<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+            <div class="fh5co-main-service">
+              <a href="#" class="fh5co-block-links text-center">
+                <div class="icon-circle">
+                  <img class="logos" src="images/logos/javascript.png" alt="js.png">
+                </div>
+                <h2>Javascript</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </a>
+            </div>
+          </div>
+
+					<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+            <div class="fh5co-main-service">
+              <a href="#" class="fh5co-block-links text-center">
+                <div class="icon-circle">
+                  <img class="logos" src="images/logos/bdd.png" alt="bdd.png">
+                </div>
+                <h2>Langages base de donnée</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </a>
             </div>
@@ -65,25 +89,25 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-            <div class="fh5co-main-service">
-              <a href="#" class="fh5co-block-links text-center">
-                <div class="icon-circle">
-                  <img class="logos" src="images/logos/php.png" alt="php.png">
-                </div>
-                <h2>PHP</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </a>
-            </div>
-          </div>
+					<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+						<div class="fh5co-main-service">
+							<a href="#" class="fh5co-block-links text-center">
+								<div class="icon-circle">
+									<img class="logos" src="images/logos/python.png" alt="python.png">
+								</div>
+								<h2>Python</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</a>
+						</div>
+					</div>
 
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+					<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
             <div class="fh5co-main-service">
               <a href="#" class="fh5co-block-links text-center">
                 <div class="icon-circle">
-                  <img class="logos" src="images/logos/javascript.png" alt="js.png">
+                  <img class="logos" src="images/logos/batch.png" alt="batch.png">
                 </div>
-                <h2>Javascript</h2>
+                <h2>Batch</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </a>
             </div>
@@ -96,18 +120,6 @@
                   <img class="logos" src="images/logos/perl.png" alt="perl.png">
                 </div>
                 <h2>Perl</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-            <div class="fh5co-main-service">
-              <a href="#" class="fh5co-block-links text-center">
-                <div class="icon-circle">
-                  <img class="logos" src="images/logos/python.png" alt="python.png">
-                </div>
-                <h2>Python</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </a>
             </div>
