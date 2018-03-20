@@ -138,9 +138,6 @@ if (isset($erreur)) {
 ?>
 
 
-</div>
-
-
 
 
 
