@@ -4,7 +4,7 @@
 
   <div class="footer-left">
     <p class="footer-links">
-      <a href="index.php">Accueil</a>
+      <a href="accueil.php">Accueil</a>
       ·
       <a href="forum.php">Forum</a>
       ·

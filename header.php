@@ -32,7 +32,7 @@ if (isset($_POST['form_connexion'])) {
 
       $erreur = "Vous êtes connecté !";
       // Redirection page d'accueil
-      //header("Location: index.php");
+      //header("Location: accueil.php");
 
     } else {
       $erreur = "Ces identifiants sont incorrects";
@@ -72,13 +72,13 @@ if (isset($_POST['form_connexion'])) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">My HELPSI</a>
+          <a class="navbar-brand" href="accueil.php">My HELPSI</a>
         </div>
 
 
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Accueil</a></li>
+            <li class="active"><a href="accueil.php">Accueil</a></li>
             <li><a href="forum.php">Forum</a></li>
             <?php
             if (isset($_SESSION['uti_mail'])) {
