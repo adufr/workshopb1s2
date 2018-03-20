@@ -53,19 +53,9 @@ if (isset($_POST['form_connexion'])) {
   <!--Importation des Polices-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <!--Importation des Modals-->
-  <link type="text/css" rel="stylesheet" href="css/modal.css" media="screen,projection"/>
-  <script type="text/javascript" src="js/modal.js"></script>
-  <!--Importation de Materialize-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <!--Importation de Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!--Importation de JQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!--Importation de Popper.js-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 
@@ -95,14 +85,14 @@ if (isset($_POST['form_connexion'])) {
           echo "
           <ul class='nav navbar-nav navbar-right'>
           <li><a href='moncompte.php'><span class='glyphicon glyphicon-user'></span>  ".$_SESSION['uti_prenom']." ".$_SESSION['uti_nom']."</a></li>
-          <li><a class='modal-trigger' href='deconnexion.php'><span class='glyphicon glyphicon-log-in'></span> Se déconnecter</a></li>
+          <li><a href='deconnexion.php'><span class='glyphicon glyphicon-log-in'></span> Se déconnecter</a></li>
           </ul>
           ";
         } else {
           echo "
           <ul class='nav navbar-nav navbar-right'>
           <li><a href='inscription.php'><span class='glyphicon glyphicon-user'></span>  Inscription</a></li>
-          <li><a class='modal-trigger' href='#connexion'><span class='glyphicon glyphicon-log-in'></span>  Connexion</a></li>
+          <li><a data-toggle='modal' href='#connexion'><span class='glyphicon glyphicon-log-in'></span>  Connexion</a></li>
           </ul>
           ";
         }
@@ -117,21 +107,37 @@ if (isset($_POST['form_connexion'])) {
 
 
 <!-- Modal de connexion -->
-<div id="connexion" class="modal modalConnexion">
-  <form method="POST">
-    <div class="form-group">
-      <label for="exampleInputEmail1">Adresse mail</label>
-      <input name="uti_mail" placeholder="Entrez votre email" required="" value="<?php if(isset($uti_mail)){ echo $uti_mail; }?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <small id="emailHelp" class="form-text text-muted">De préférence votre adresse mail EPSI ou WIS.</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Mot de passe</label>
-      <input name="uti_mdp" placeholder="Entrez votre mot de passe" required="" type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button name="form_connexion" type="submit" class="btn btn-primary">Connexion</button>
-  </form>
+<div data-show="false" class="modal" id="connexion" role="dialog">
+
+  <div class="modal-dialog">
+    <form method="POST" class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Connexion</h4>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Adresse mail</label>
+          <input name="uti_mail" placeholder="Entrez votre email" required="" value="<?php if(isset($uti_mail)){ echo $uti_mail; }?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Mot de passe</label>
+          <input name="uti_mdp" placeholder="Entrez votre mot de passe" required="" type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+        </div>
+        <button name="form_connexion" type="submit" class="btn btn-primary">Connexion</button>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+      </div>
+
+    </form>
+  </div>
+
 </div>
