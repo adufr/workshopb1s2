@@ -59,7 +59,7 @@
                 <div class="icon-circle">
                   <img class="logos" src="images/logos/bdd.png" alt="bdd.png">
                 </div>
-                <h2>Langages base de donnée</h2>
+                <h2>Base de données</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </a>
             </div>
