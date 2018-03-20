@@ -17,7 +17,23 @@
 	</button></a>
 </br>
 
+
+
+
+
+<div id="comptecree" class="modal">
+	<div class="col-md-12">
+			<h1>Votre compte à bien été créé !</h1>
+	</div>
+</div>
+
+
+
+
+
 </body>
+
+
 
 	<?php
 		include('footer.php');
