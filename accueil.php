@@ -22,10 +22,10 @@ $(document).ready(function() {
 	<section id="header">
 		<header>
 			<h1>My HELPSI</h1>
-			<p>By nous</p>
+			<p>By EPSI Lyon</p>
 		</header>
 		<footer>
-			<a href="#banner" class="button style2 js-scrollTo">Le but de ce site</a>
+			<a href="#banner" class="button style2 js-scrollTo">Qu'est-ce que My HELPSI ?</a>
 		</footer>
 	</section>
 
@@ -35,27 +35,29 @@ $(document).ready(function() {
 			<h2>Bienvenue sur My HELPSI</h2>
 			</br>
 		</header>
-		<p>	Vous pouvez rechercher des forums,
-			discuter avec d'autres utilisateurs qui pourront vous aider sur des sujets,</br>
-			connaître leur disponibilité au sein de notre école ou en ligne,</br>
-			prendre connaissance de vos problèmes et essayer d'y résoudre.</br>
+		<p>My HELPSI est une plateforme permettant à ses utilisateurs,</br>
+			élèves de WIS ou d'EPSI, de partager leur savoir, autant autour de</br>
+			l'informatique que du reste. Le but de ce site est de faciliter les échanges</br>
+			entre étudiants, autant au niveau local au sein d'un campus qu'au niveau national.</br></br>
 		</p>
 		<footer>
-			<a href="#bannerdeux" class="button style2 js-scrollTo">Dis m'en plus</a>
+			<a href="#bannerdeux" class="button style2 js-scrollTo">Comment ?</a>
 		</footer>
 	</section>
 
 	<section id="bannerdeux" class='js-scrollTo'>
 		<header>
-			<h2>Les forums</h2></br>
+			<h2>Le forum</h2></br>
 		</header>
-		<p>Vous pouvez créer de nouveaux sujets dans chaques forums, </br>
-			chaque forum étant dédié à une compétence en particulier.</br>
-			Plus vous utiliserez ces forums plus pour pourrez vous entre-aider !</br>
-			De plus les problèmes résolus seront visibles par tous pour que vous puissiez accéder à ce dont vous avez besoin le plus vite possible. </br> </br>
+		<p>My HELPSI met à votre disposition un large forum, comprenant</br>
+			plusieurs sous-forum, chacun étant dédié à une compétence en particulier.</br>
+			De la programmation au cours de droit en passant par l'anglais et le management,</br>
+			si vous chercher de l'aide, vous êtes au bon endroit. De plus, vous pourrez trouver des</br>
+			tutoriaux rédigé par des étudiants membres, qui vous permettront de découvrir de nouvelles</br>
+			technologies !</br></br></br>
 		</p>
 		<footer>
-			<a href="forum.php" class="button style2 js-scrollTo">Accéder aux forums</a>
+			<a href="forum.php" class="button style2 js-scrollTo">Ne plus attendre</a>
 		</footer>
 	</section>
 
