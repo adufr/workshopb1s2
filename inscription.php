@@ -1,54 +1,54 @@
-<html class="no-js">
 <?php
+session_start();
+include('bdd.php');
 include('header.php');
-// include('bdd.php');
+
+
 
 // On vérifie que le formulaire ai été envoyé :
-if (isset($_POST['inscription'])) {
+if (isset($_POST['form_inscription'])) {
 
 	// On vérifie qu'aucun champ ne soit vide (doublecheck du required) :
-	if (!empty($_POST['uti_prenom']) AND !empty($_POST['uti_nom']) AND !empty($_POST['uti_sexe']) AND !empty($_POST['uti_sexe'])
+	if (!empty($_POST['uti_prenom']) AND !empty($_POST['uti_nom']) AND !empty($_POST['uti_sexe'])
 	AND !empty($_POST['uti_classe']) AND !empty($_POST['uti_mdp']) AND !empty($_POST['uti_mdp2']) AND !empty($_POST['uti_mail'])
 	AND !empty($_POST['uti_campus'])) {
 
+		// On récupère les informations :
+		$uti_prenom = htmlspecialchars($_POST['uti_prenom']);
+		$uti_nom = htmlspecialchars($_POST['uti_nom']);
+		$uti_sexe = htmlspecialchars($_POST['uti_sexe']);
+		$uti_classe = htmlspecialchars($_POST['uti_classe']);
+		$uti_campus = htmlspecialchars($_POST['uti_campus']);
+		$uti_mdp = $_POST['uti_mdp'];
+		$uti_mdp2 = $_POST['uti_mdp2'];
+		$uti_mail = $_POST['uti_mail'];
+
 		// On vérifie que les listes ne sont pas vides :
-		if ($_POST['uti_classe'] != "null" AND $_POST['uti_campus'] != "null" AND $_POST['uti_sexe']) {
-
-			// On récupère les informations :
-			$uti_prenom = htmlspecialchars($_POST['uti_prenom']);
-			$uti_nom = htmlspecialchars($_POST['uti_nom']);
-			$uti_sexe = htmlspecialchars($_POST['uti_sexe']);
-			$uti_classe = htmlspecialchars($_POST['uti_classe']);
-			$uti_campus = htmlspecialchars($_POST['uti_campus']);
-			$uti_mdp = $_POST['mdp'];
-			$uti_mdp2 = $_POST['mdp2'];
-			$uti_mail = $_POST['uti_mail'];
-
-			$uti_mdp_crypte = sha1(md5($uti_mdp));
+		if ($_POST['uti_classe'] != "null" AND $_POST['uti_campus'] != "null" AND $_POST['uti_sexe'] != "null") {
 
 			// On vérifie que les champs ne dépasse pas la taille acceptée par la BDD :
-			if (strlen($uti_prenom) > 25) {
-				if (strlen($uti_nom) > 25) {
-					if (strlen($uti_sexe) > 25) {
-						if (strlen($uti_classe) > 25) {
-							if (strlen($uti_mdp) > 25) {
-								if (strlen($uti_mail) > 50) {
-									if (strlen($uti_campus) > 25) {
+			if (strlen($uti_prenom) < 25) {
+				if (strlen($uti_nom) < 25) {
+					if (strlen($uti_sexe) < 25) {
+						if (strlen($uti_classe) < 25) {
+							if (strlen($uti_mdp) < 25) {
+								if (strlen($uti_mail) < 50) {
+									if (strlen($uti_campus) < 25) {
 
 										// On vérifie que les deux mdp sont identiques :
-										if ($mdp == $mdp2) {
+										if ($uti_mdp == $uti_mdp2) {
 											// On vérifie que l'email est bien valide :
 											if (filter_var($uti_mail, FILTER_VALIDATE_EMAIL)) {
 
 												// On vérifie que l'adresse mail n'est pas déjà enregistré dans la bdd :
-												$req_mail = $bdd -> prepare("SELECT * FROM utilisateurs WHERE uti_mail = ?");
+												$req_mail = $bdd -> prepare("SELECT * FROM UTILISATEUR WHERE uti_mail = ?");
 			                  $req_mail -> execute(array($uti_mail));
 			                  $mail_existe = $req_mail -> rowCount();
 			                  if ($mail_existe == 0) {
 
 													// Tout est bon : on insert l'utilisateur dans la bdd :
-													$req_inser = $bdd -> prepare("INSERT INTO utilisateurs(uti_nom, uti_prenom, uti_mail, uti_sexe, uti_classe, uti_campus, uti_mdp) VALUES(?, ?, ?, ?, ?, ?, ?)");
-			                    $insertuser -> execute(array($uti_nom, $uti_prenom, $uti_mail, $uti_sexe, $uti_classe, $uti_campus, $uti_mdp_crypte));
+													$req_inser = $bdd -> prepare("INSERT INTO UTILISATEUR(uti_nom, uti_prenom, uti_mail, uti_sexe, uti_classe, uti_campus, uti_mdp) VALUES(?, ?, ?, ?, ?, ?, ?)");
+			                    $req_inser -> execute(array($uti_nom, $uti_prenom, $uti_mail, $uti_sexe, $uti_classe, $uti_campus, $uti_mdp));
 			                    $erreur = "Votre compte a bien été créé !";
 
 												} else {
@@ -88,15 +88,18 @@ if (isset($_POST['inscription'])) {
 
 }
 
+
+
+
 ?>
 
-
+<html class="no-js">
 <form method="POST">
 	<input type="text" name="uti_prenom" placeholder="Prénom" required="" value="<?php if(isset($uti_prenom)){ echo $uti_prenom; }?>" /> </br>
 	<input type="text" name="uti_nom" placeholder="Nom de famille" required="" value="<?php if(isset($uti_nom)){ echo $uti_nom; }?>" /> </br>
-	<input type="email" name="uti_mail" placeholder="Email" required="" value="<?php if(isset($uti_email)){ echo $uti_email; }?>"/> </br>
+	<input type="email" name="uti_mail" placeholder="Email" required="" value="<?php if(isset($uti_mail)){ echo $uti_mail; }?>"/> </br>
 	<input type="password" name="uti_mdp" placeholder="Mot de passe" required=""/> </br>
-	<input type="password" name="uti_mdp" placeholder="Mot de passe" required=""/> </br>
+	<input type="password" name="uti_mdp2" placeholder="Mot de passe" required=""/> </br>
 	<select name="uti_classe">
 		<option value="null" <?php if (isset($uti_classe) && $uti_classe == "null"){echo "selected";} ?>>--Sélectionnez votre statut--
 		<option value="B1" <?php if (isset($uti_classe) && $uti_classe == "B1"){echo "selected";} ?>>B1
@@ -111,8 +114,8 @@ if (isset($_POST['inscription'])) {
 	</select> </br>
 	<select name="uti_sexe">
 		<option value="null" <?php if (isset($uti_sexe) && $uti_sexe == "null"){echo "selected";} ?>>--Sélectionnez votre sexe--
-		<option value="Homme" <?php if (isset($uti_sexe) && $uti_sexe == "Homme"){echo "selected";} ?>>Femme
-		<option value="Femme" <?php if (isset($uti_sexe) && $uti_sexe == "Femme"){echo "selected";} ?>>Homme
+		<option value="Homme" <?php if (isset($uti_sexe) && $uti_sexe == "Homme"){echo "selected";} ?>>Homme
+		<option value="Femme" <?php if (isset($uti_sexe) && $uti_sexe == "Femme"){echo "selected";} ?>>Femme
 		<option value="Autre" <?php if (isset($uti_sexe) && $uti_sexe == "Autre"){echo "selected";} ?>>Autre
 	</select> </br>
 	<select name="uti_campus">
@@ -128,16 +131,14 @@ if (isset($_POST['inscription'])) {
 		<option value="Montpellier" <?php if (isset($uti_campus) && $uti_campus == "Montpellier"){echo "selected";} ?>>Montpellier
 	</select> </br>
 
-	<input type="submit" name="inscription" value="S'inscrire"/> <br/><br/>
+	<input type="submit" name="form_inscription" value="S'inscrire"/> <br/><br/>
 </form>
 
 <?php
 if (isset($erreur)) {
-	echo '<font color="red">'.$erreur.'</font>';
+	echo "<font color='red'>".$erreur."</font>";
 }
 ?>
-
-
 
 
 
