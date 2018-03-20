@@ -16,7 +16,7 @@ CREATE TABLE UTILISATEUR(
         uti_sexe               Varchar (25) ,
         uti_mdp                Varchar (25) ,
         uti_campus             Varchar (25) ,
-        uti_messages_envoyes   int (11) Auto_increment  ,
+        uti_messages_envoyes   Int ,
         uti_derniere_connexion Date ,
         uti_estadmin           Bool NOT NULL ,
         PRIMARY KEY (uti_id )
