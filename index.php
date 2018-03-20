@@ -2,6 +2,7 @@
 	<?php
 		include('header.php');
 	?>
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<script type="text/javascript">
@@ -17,6 +18,8 @@
 
 		</script>
 
+
+<div class="body">
 
 	<!-- Header -->
 		<section id="header">
@@ -57,6 +60,9 @@
 					<a href="forum.php" class="button style2 js-scrollTo">Accéder aux forums</a>
 				</footer>
 			</section>
+
+
+</div>
 
 
 
