@@ -5,28 +5,19 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center">
           <p class="fh5co-social-icons">
-            <a href="#"><i class="icon-twitter2"></i></a>
-            <a href="#"><i class="icon-facebook2"></i></a>
-            <a href="#"><i class="icon-instagram"></i></a>
-            <a href="#"><i class="icon-dribbble2"></i></a>
-            <a href="#"><i class="icon-youtube"></i></a>
+            <a href="https://twitter.com/EPSI_Ecoles"><i class="icon-twitter2"></i></a>
+            <a href="https://en-gb.facebook.com/ecole.EPSI/"><i class="icon-facebook2"></i></a>
+            <a href="http://www.epsi.fr/"><i class="icon-dribbble2"></i></a>
+            <a href="https://www.youtube.com/user/ecoleepsi"><i class="icon-youtube"></i></a>
           </p>
-          <p>Copyright 2016 Free Html5 <a href="#">Pentagon</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+          <p>Site créé par Ariana Montignac, Ambrine Quintana, Alexandre Tuet, Arthur Dufour </p>
         </div>
       </div>
     </div>
   </div>
 </footer>
-
-
 </div>
-<!-- END fh5co-page -->
-
 </div>
-<!-- END fh5co-wrapper -->
-
-<!-- jQuery -->
-
 
 <script src="js/jquery.min.js"></script>
 <!-- jQuery Easing -->
