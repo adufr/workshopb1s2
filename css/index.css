@@ -1,0 +1,20 @@
+h1{
+  font-family: 'Bookman Old Style', serif;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+
+button{
+  display: table;
+  background: #222222;
+  border-style: solid;
+  border-color: #8e8e8e;
+  border-width: 1px;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  float: right;
+}
