@@ -1856,35 +1856,8 @@
 			}
 
 			#banner footer {
-				position: absolute;
-				bottom: 9em;
-				margin: 0;
-				width: 100%;
-			}
-
-			#banner footer:before {
-				content: '';
-				display: block;
-				width: 60px;
-				height: 36px;
-				position: absolute;
-				left: 50%;
-				bottom: -4.5em;
-				margin-left: -45px;
-				background: url("images/arrow.svg");
-			}
-
-				#banner footer:after {
-					content: '';
-					display: block;
-					position: absolute;
-					bottom: -9em;
-					left: 50%;
-					height: 9em;
-					border-left: solid 1px #fff;
+					margin: 2em 0 0 0;
 				}
-
-
 
 
 /* Wide */
