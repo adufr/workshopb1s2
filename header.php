@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
 session_start();
 include('bdd.php');
@@ -67,36 +65,45 @@ if (isset($_POST['form_connexion'])) {
 
     <nav class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid">
+
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.php">MY HELPSI</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.php">My HELPSI</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.php">Accueil</a></li>
-          <li><a href="forum.php">Forum</a></li>
+
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.php">Accueil</a></li>
+            <li><a href="forum.php">Forum</a></li>
+            <?php
+            if (isset($_SESSION['uti_mail'])) {
+              echo"<li><a href='moncompte.php?q=messages'>Mes messages</a></li>";
+            }?>
+          </ul>
+
+
           <?php
           if (isset($_SESSION['uti_mail'])) {
-            echo"<li><a href='moncompte.php?q=messages'>Mes messages</a></li>";
-          }?>
-        </ul>
-
-
-        <?php
-        if (isset($_SESSION['uti_mail'])) {
-          echo "
-          <ul class='nav navbar-nav navbar-right'>
-          <li><a href='moncompte.php'><span class='glyphicon glyphicon-user'></span>  ".$_SESSION['uti_prenom']." ".$_SESSION['uti_nom']."</a></li>
-          <li><a href='deconnexion.php'><span class='glyphicon glyphicon-log-in'></span> Se déconnecter</a></li>
-          </ul>
-          ";
-        } else {
-          echo "
-          <ul class='nav navbar-nav navbar-right'>
-          <li><a href='inscription.php'><span class='glyphicon glyphicon-user'></span>  Inscription</a></li>
-          <li><a data-toggle='modal' href='#connexion'><span class='glyphicon glyphicon-log-in'></span>  Connexion</a></li>
-          </ul>
-          ";
-        }
-        ?>
+            echo "
+            <ul class='nav navbar-nav navbar-right'>
+            <li><a href='moncompte.php'><span class='glyphicon glyphicon-user'></span>  ".$_SESSION['uti_prenom']." ".$_SESSION['uti_nom']."</a></li>
+            <li><a href='deconnexion.php'><span class='glyphicon glyphicon-log-in'></span> Se déconnecter</a></li>
+            </ul>
+            ";
+          } else {
+            echo "
+            <ul class='nav navbar-nav navbar-right'>
+            <li><a href='inscription.php'><span class='glyphicon glyphicon-user'></span>  Inscription</a></li>
+            <li><a data-toggle='modal' href='#connexion'><span class='glyphicon glyphicon-log-in'></span>  Connexion</a></li>
+            </ul>
+            ";
+          }
+          ?>
 
       </div>
     </nav> </br> </br></br></br>
