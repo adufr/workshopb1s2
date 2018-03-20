@@ -11,8 +11,10 @@
 <!-- 1e catégorie de forums, les langages de prog -->
           <div class="col-md-12">
             <div class="fh5co-heading text-center">
-                <h2 class="fh5co-heading-title">Langages de programmations</h2>
-              </div>
+              <p><br/><br/></p>
+              <h2 class="fh5co-heading-title">Langages de programmations</h2>
+              <p><br/><br/></p>
+            </div>
           </div>
 
           <div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
@@ -139,8 +141,11 @@
 <!-- 2e catégorie : les frameworks -->
           <div class="col-md-12">
             <div class="fh5co-heading text-center">
-                <h2 class="fh5co-heading-title">Frameworks</h2>
-              </div>
+              <p><br/><br/></p>
+              <p><br/><br/></p>
+              <h2 class="fh5co-heading-title">Frameworks</h2>
+              <p><br/><br/></p>
+            </div>
           </div>
 
           <div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
@@ -171,7 +176,10 @@
 <!-- 3e catégorie : Systèmes d'exploitation & mobile-->
           <div class="col-md-12">
             <div class="fh5co-heading text-center">
+              <p><br/><br/></p>
+              <p><br/><br/></p>
               <h2 class="fh5co-heading-title">Systèmes d'exploitation & mobile</h2>
+              <p><br/><br/></p>
             </div>
           </div>
 
@@ -215,7 +223,10 @@
 <!-- 4e catégorie : les cours généraux -->
           <div class="col-md-12">
             <div class="fh5co-heading text-center">
+              <p><br/><br/></p>
+              <p><br/><br/></p>
                 <h2 class="fh5co-heading-title">Général</h2>
+                <p><br/><br/></p>
               </div>
           </div>
 
