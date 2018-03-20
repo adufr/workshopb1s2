@@ -2,17 +2,7 @@
 <?php
 	include('header.php');
 ?>
-	<div class="fh5co-hero">
-		<div class="fh5co-overlay"></div>
-		<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
-			<div class="desc animate-box">
-				<h2>Create <strong>Good</strong> Things</h2>
-				<span>Lovely Crafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">FREEHTML5.co</a></span>
-				<span><a class="btn btn-primary btn-lg" href="#">Get Started</a></span>
-			</div>
-		</div>
-	</div>
-	<!-- end:header-top -->
+
 
 	<main id="fh5co-main" role="main">
 				<div class="container pb-lg">
@@ -73,24 +63,24 @@
 				</div>
 			</main>
 
-			<button type="button" name="button" class="waves-effect waves-light btn modal-trigger blue" href="#connexion">Modal</button>
 
 			<div id="connexion" class="modal">
-				<div class="modal-content">
-					<div class="row">
-						<h2 align="center">Connexion</h2>
-						<form class="" action="" method="post">
-							<div class="input-field col s6" align="center">
-								<label for="1">Identifiant</label>
-								<input id="1" type="text" name="identifiant" class="validate" value="">
-							</div>
-							<div class="input-field col s6" align="center">
-								<label for="2">Mot de Passe</label>
-								<input id="2" type="text" name="mdp" class="validate" value="">
-							</div>
-						</form>
-					</div>
-				</div>
+				<form>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Email address</label>
+	    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	  <div class="form-check">
+	    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+	    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
 			</div>
 
 
