@@ -1,6 +1,5 @@
 <html class="no-js">
 <?php
-session_start();
 include('bdd.php');
 include('header.php');
 
