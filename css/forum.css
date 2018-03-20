@@ -79,29 +79,9 @@
 }
 
 
-#footer {
-  background: #4286f4;
-  padding: 60px 0 40px;
-}
-#footer p {
-  color: white;
-  font-size: 14px;
-}
-#footer p a {
-  color: rgba(255, 255, 255, 0.5);
-}
-#footer p a:hover, #footer p a:active, #footer p a:focus {
-  color: rgba(255, 255, 255, 0.9) !important;
-}
-
 .logos
 {
   height: 72%;
   width: 72%;
   margin-top: 15%;
-}
-
-.modalConnexion {
-  height: 50%;
-  width: 50%;
 }

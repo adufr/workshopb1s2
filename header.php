@@ -50,18 +50,26 @@ if (isset($_POST['form_connexion'])) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!--Import Google Icon Font-->
+  <!--Importation des Polices-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import modal-->
-  <link type="text/css" rel="stylesheet" href="modal/modal.css"  media="screen,projection"/>
-  <link rel="stylesheet" type="text/css" href="styleau.css"/>
-  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <!--Importation des Modals-->
+  <link type="text/css" rel="stylesheet" href="css/modal.css" media="screen,projection"/>
+  <script type="text/javascript" src="js/modal.js"></script>
+  <!--Importation de Materialize-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!--Importation de Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- JQuery  -->
+  <!--Importation de JQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Importation de Popper.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
 
+
+
+<link rel="stylesheet" type="text/css" href="css/header.css"/>
 
 </head>
 <body>
@@ -70,7 +78,7 @@ if (isset($_POST['form_connexion'])) {
     <nav class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.php">My hELPSI</a>
+          <a class="navbar-brand" href="index.php">MY HELPSI</a>
         </div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="index.php">Accueil</a></li>
@@ -99,8 +107,6 @@ if (isset($_POST['form_connexion'])) {
           ";
         }
         ?>
-
-
 
       </div>
     </nav> </br> </br></br></br>
