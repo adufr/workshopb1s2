@@ -15,7 +15,10 @@
 }
 .fh5co-main-service .fh5co-block-links .icon-circle {
   display: table;
-  background: #87b6c4;
+  background: #ffffff;
+  border-style: solid;
+  border-color: #8e8e8e;
+  border-width: 1px;
   width: 100px;
   height: 100px;
   text-align: center;
@@ -60,7 +63,7 @@
   margin-top: -30px;
 }
 .fh5co-main-service .fh5co-block-links:hover .icon-circle {
-  background: #f66d52;
+  background: #e1e9ed;
 }
 .csstransitions .fh5co-main-service .fh5co-block-links:hover .icon-circle {
   width: 120px;
@@ -89,4 +92,11 @@
 }
 #footer p a:hover, #footer p a:active, #footer p a:focus {
   color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.logos
+{
+  height: 70%;
+  width: 70%;
+  margin-top: 15%;
 }
