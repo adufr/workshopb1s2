@@ -21,7 +21,6 @@ $(document).ready(function() {
 	<!-- Header -->
 	<section id="header">
 		<header>
-			<img id= "logo" src="images/MYHELPSI.png" alt="Logo du site"/>
 			<p>By EPSI Lyon</p>
 		</header>
 		<footer>
