@@ -21,7 +21,7 @@ $(document).ready(function() {
 	<!-- Header -->
 	<section id="header">
 		<header>
-			<h1>My HELPSI</h1>
+			<img id= "logo" src="images/MYHELPSI.png" alt="Logo du site"/>
 			<p>By EPSI Lyon</p>
 		</header>
 		<footer>
@@ -65,6 +65,3 @@ $(document).ready(function() {
 	<?php include('footer.php'); ?>
 
 </div>
-
-
-

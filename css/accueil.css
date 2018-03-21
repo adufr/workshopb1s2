@@ -9,8 +9,12 @@
     opacity:1
   }
 }
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+#logo{
+  width: 60%;
+  height: 40%;
+  margin-top: -14em;
+}
+html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
 {
 	margin: 0;
 	padding: 0;
@@ -1761,7 +1765,7 @@ button.style3:hover,
 
 #header footer {
 	position: absolute;
-	bottom: 9em;
+	bottom: 15em;
 	margin: 0;
 	width: 100%;
 }
@@ -1770,20 +1774,20 @@ button.style3:hover,
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: -9em;
+	bottom: -20em;
 	left: 50%;
-	height: 9em;
+	height: 20em;
 	border-left: solid 1px #fff;
 }
 
 #header footer:before {
 	content: '';
 	display: block;
-	width: 90px;
+	width: 170px;
 	height: 66px;
 	position: absolute;
 	left: 50%;
-	bottom: -4.5em;
+	bottom: -7.5em;
 	margin-left: -45px;
 	margin-bottom: -33px;
 	background: url("../images/index/arrow.svg") no-repeat;
