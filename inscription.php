@@ -49,7 +49,6 @@ if (isset($_POST['form_inscription'])) {
 													// Tout est bon : on insert l'utilisateur dans la bdd :
 													$req_inser = $bdd -> prepare("INSERT INTO UTILISATEUR(uti_nom, uti_prenom, uti_mail, uti_sexe, uti_classe, uti_campus, uti_mdp) VALUES(?, ?, ?, ?, ?, ?, ?)");
 			                    $req_inser -> execute(array($uti_nom, $uti_prenom, $uti_mail, $uti_sexe, $uti_classe, $uti_campus, $uti_mdp));
-			                    $erreur = '';
 
 													// On attend 0.5 secondes :
 													sleep(0.5);
