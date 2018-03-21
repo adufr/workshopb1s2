@@ -30,16 +30,15 @@ if (isset($_POST['form_connexion'])) {
       $_SESSION['uti_messages_envoyes'] = $uti_infos['uti_messages_envoyes'];
       $_SESSION['uti_derniere_connexion'] = $uti_infos['uti_derniere_connexion'];
 
-      $erreur = "Vous êtes connecté !";
       // Redirection page d'accueil
       //header("Location: accueil.php");
 
     } else {
-      $erreur = "Ces identifiants sont incorrects";
+      $erreur = "Identifiants incorrects";
     }
 
   } else {
-    $erreur = "Vous devez remplir tout les champs";
+      $erreur = "Vous devez remplir tout les champs";
   }
 }
 ?>
@@ -129,15 +128,18 @@ if (isset($_POST['form_connexion'])) {
           <label for="exampleInputEmail1">Adresse mail</label>
           <input name="uti_mail" placeholder="Entrez votre email" required="" value="<?php if(isset($uti_mail)){ echo $uti_mail; }?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
+
         <div class="form-group">
           <label for="exampleInputPassword1">Mot de passe</label>
           <input name="uti_mdp" placeholder="Entrez votre mot de passe" required="" type="password" class="form-control" id="exampleInputPassword1">
         </div>
+
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
         </div>
-        <button name="form_connexion" type="submit" class="btn btn-primary">Connexion</button>
+
+        <button name='form_connexion' type='submit' class='btn btn-primary'>Connexion</button>
       </div>
 
       <div class="modal-footer">

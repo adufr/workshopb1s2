@@ -203,8 +203,14 @@ if (isset($_POST['form_inscription'])) {
 
 				</br></br></br></br></br></br>
 
+				<?php
+					if (isset($erreur)) {
+						echo "<span class='alert alert-danger'><strong>Erreur !</strong> $erreur.</span>";
+					}
+				?>
+
 				<div class="form-group col-md-4">
-					<button type="submit" name="form_inscription" class="btn btn-primary modal-trigger">S'inscrire</button>
+					<button type='submit' name='form_inscription' class='btn btn-primary modal-trigger'>S'inscrire</button>
 				</div>
   		</div>
 		</form>
@@ -219,14 +225,4 @@ if (isset($_POST['form_inscription'])) {
 
 
 
-<?php
-if (isset($erreur)) {
-	echo "<font color='red'>".$erreur."</font>";
-}
-?>
-
-
-
-<?php
-include('footer.php');
-?>
+<?php include('footer.php'); ?>
