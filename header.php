@@ -82,7 +82,7 @@ if (isset($_POST['form_connexion'])) {
             <li><a href="forum.php">Forum</a></li>
             <?php
             if (isset($_SESSION['uti_mail'])) {
-              echo"<li><a href='moncompte.php?q=messages'>Mes messages</a></li>";
+              echo"<li><a href='messages.php'>Mes messages</a></li>";
             }?>
           </ul>
 
@@ -91,7 +91,7 @@ if (isset($_POST['form_connexion'])) {
           if (isset($_SESSION['uti_mail'])) {
             echo "
             <ul class='nav navbar-nav navbar-right'>
-            <li><a href='moncompte.php'><span class='glyphicon glyphicon-user'></span>  ".$_SESSION['uti_prenom']." ".$_SESSION['uti_nom']."</a></li>
+            <li><a href='compte.php'><span class='glyphicon glyphicon-user'></span>  ".$_SESSION['uti_prenom']." ".$_SESSION['uti_nom']."</a></li>
             <li><a href='deconnexion.php'><span class='glyphicon glyphicon-log-in'></span> Se déconnecter</a></li>
             </ul>
             ";
