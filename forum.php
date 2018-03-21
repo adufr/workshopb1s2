@@ -239,7 +239,7 @@ include('header.php');
 				<div class="fh5co-heading text-center">
 					<p><br/><br/></p>
 					<p><br/><br/></p>
-					<h2 class="fh5co-heading-title">Général</h2>
+					<h2 class="fh5co-heading-title">Matières générales</h2>
 					<p><br/><br/></p>
 				</div>
 			</div>
