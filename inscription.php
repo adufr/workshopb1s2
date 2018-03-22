@@ -22,6 +22,7 @@ if (isset($_POST['form_inscription'])) {
 		$uti_mdp = $_POST['uti_mdp'];
 		$uti_mdp2 = $_POST['uti_mdp2'];
 		$uti_mail = $_POST['uti_mail'];
+		$uti_pdp = 'images/pdp.png';
 
 		// On vérifie que les listes ne sont pas vides :
 		if ($_POST['uti_classe'] != "null" AND $_POST['uti_campus'] != "null" AND $_POST['uti_sexe'] != "null") {
@@ -47,8 +48,8 @@ if (isset($_POST['form_inscription'])) {
 			                  if ($mail_existe == 0) {
 
 													// Tout est bon : on insert l'utilisateur dans la bdd :
-													$req_inser = $bdd -> prepare("INSERT INTO UTILISATEUR(uti_nom, uti_prenom, uti_mail, uti_sexe, uti_classe, uti_campus, uti_mdp) VALUES(?, ?, ?, ?, ?, ?, ?)");
-			                    $req_inser -> execute(array($uti_nom, $uti_prenom, $uti_mail, $uti_sexe, $uti_classe, $uti_campus, $uti_mdp));
+													$req_inser = $bdd -> prepare("INSERT INTO UTILISATEUR(uti_nom, uti_prenom, uti_mail, uti_sexe, uti_classe, uti_campus, uti_mdp, uti_pdp) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
+			                    $req_inser -> execute(array($uti_nom, $uti_prenom, $uti_mail, $uti_sexe, $uti_classe, $uti_campus, $uti_mdp, $uti_pdp));
 			                    $erreur = '';
 
 													// On attend 0.5 secondes :

@@ -29,6 +29,7 @@ if (isset($_POST['form_connexion'])) {
       $_SESSION['uti_campus'] = $uti_infos['uti_campus'];
       $_SESSION['uti_messages_envoyes'] = $uti_infos['uti_messages_envoyes'];
       $_SESSION['uti_derniere_connexion'] = $uti_infos['uti_derniere_connexion'];
+			$_SESSION['uti_pdp'] = $uti_infos['uti_pdp'];
 
       $erreur = "Vous êtes connecté !";
       // Redirection page d'accueil
