@@ -239,8 +239,44 @@ if (isset($erreur)) {
 </div>
 
 
+<?php
+  echo "<link rel='stylesheet' type='text/css' href='css/profil.css'/>";
+  $req_uti = $bdd -> prepare("SELECT * FROM utilisateur WHERE uti_id = ?");
+  $req_uti -> execute(array($_SESSION['uti_id']));
+  $uti_infos = $req_uti -> fetch();
+?>
+<div id="profil" class="container">
+    <div class="row">
 
+        <div >
+            <img id="profil_pdp" src="<?php echo $uti_infos['uti_pdp']; ?>" alt="Photo de profil" class="img-rounded img-responsive" />
+        </div>
 
+        <div>
+            <h1><?php echo $uti_infos['uti_prenom']." ".$uti_infos['uti_nom']; ?></h1></br>
+            <!--<small><cite>San Francisco, USA <i class="glyphicon glyphicon-map-marker"></i></cite></small>-->
+            <p id='profil_texte'>
+                <i class="glyphicon glyphicon-envelope profilicon"></i><?php echo $uti_infos['uti_mail']; ?>
+                </br>
+                <i class="glyphicon glyphicon-home profilicon"></i><?php echo "Campus de ".$uti_infos['uti_campus']; ?>
+                </br>
+                <i class="glyphicon glyphicon-user profilicon"></i><?php echo "Actuellement en ".$uti_infos['uti_classe']; ?>
+                </br>
+                <i class="glyphicon glyphicon-list profilicon"></i>
+                    <?php
+                        if (isset($uti_infos['uti_messages_envoyes'])) {
+                            echo "A posté ".$uti_infos['uti_messages_envoyes']." messages</br></br>";
+                        } else {
+                            echo "Erreur</br></br>";
+                        }
+                    ?>
+
+            </p>
+
+        </div>
+
+    </div>
+</div>
 
 
 <!-- Modal modification email -->
