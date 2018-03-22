@@ -34,7 +34,7 @@ if (isset($_POST['form_recherche'])) {
             echo "<tr class='success'>
                     <td><span class='label label-warning'>Prénom</span></td>
                     <td>".$prenom_info['uti_prenom']." ".$prenom_info['uti_nom']."</td>
-                    <td>lien profil</td>
+                    <td><a href=profil.php?id=".$prenom_info['uti_id'].">Son profil</a></td>
                   </tr>";
           }
         }
@@ -51,7 +51,7 @@ if (isset($_POST['form_recherche'])) {
             echo "<tr class='success'>
             <td><span class='label label-info'>Nom</span></td>
             <td>".$nom_info['uti_prenom']." ".$nom_info['uti_nom']."</td>
-            <td>lien profil</td>
+            <td><a href=profil.php?id=".$prenom_info['uti_id'].">Son profil</a></td>
             </tr>";
           }
 

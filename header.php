@@ -104,9 +104,9 @@ if (isset($_POST['form_connexion'])) {
             <ul class='nav navbar-nav navbar-right'>
             <form method='POST' action='recherche.php' class='navbar-form navbar-left'>
               <div class='input-group'>
-                <input style='background-color: #707070; color: black;' type='text' name='recherche' class='form-control' placeholder='Rechercher'>
+                <input style='background-color: #fff; color: black;' type='text' name='recherche' class='form-control' placeholder='Rechercher'>
                 <div class='input-group-btn'>
-                  <button style='background-color: #707070' class='btn btn-default' name='form_recherche' type='submit'><i class='glyphicon glyphicon-search'></i></button>
+                  <button style='background-color: #fff; height: 34px;' class='btn btn-default' name='form_recherche' type='submit'><i class='glyphicon glyphicon-search'></i></button>
                 </div>
               </div>
             </form>

@@ -76,7 +76,7 @@ if (isset($_POST['form_inscription'])) {
 														$_SESSION['uti_derniere_connexion'] = $uti_infos['uti_derniere_connexion'];
 
 														sleep(0.5);
-														header('Location: accueil.php');
+														header('Location: competences.php');
 
 													} else {
 														$erreur = "Un problème est survenu";
