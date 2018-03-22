@@ -15,6 +15,7 @@ include('header.php');
 				<div class="h2-text">
 					<p><br/><br/></p>
 					<h2 >Langages de programmations</h2>
+					<p><br/><br/></p>
 				</div>
 			</div>
 
