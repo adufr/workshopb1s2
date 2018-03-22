@@ -12,7 +12,7 @@ if (isset($_POST['form_connexion'])) {
     $uti_mdp_crypte = $_POST['uti_mdp'];
 
     // On vérifie que le couple email / mot de passe existe dans la bdd :
-    $req_uti = $bdd -> prepare("SELECT * FROM UTILISATEUR WHERE uti_mail = ? AND uti_mdp = ?");
+    $req_uti = $bdd -> prepare("SELECT * FROM utilisateur WHERE uti_mail = ? AND uti_mdp = ?");
     $req_uti -> execute(array($uti_mail, $uti_mdp_crypte));
     $uti_existe = $req_uti -> rowCount();
     if ($uti_existe == "1") {

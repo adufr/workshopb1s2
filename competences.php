@@ -174,73 +174,73 @@ if (isset($_POST['valider'])) {
 
 
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_hc, $niv_comp0));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_php, $niv_comp1));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_js, $niv_comp2));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_bdd, $niv_comp3));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_ccpp, $niv_comp4));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_csh, $niv_comp5));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_py, $niv_comp6));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_bat, $niv_comp7));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_perl, $niv_comp8));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_ruby, $niv_comp9));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_vb, $niv_comp10));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_jsf, $niv_comp11));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_phpf, $niv_comp12));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_linux, $niv_comp13));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_win, $niv_comp14));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_appmobile, $niv_comp15));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_ang, $niv_comp16));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_fran, $niv_comp17));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_maths, $niv_comp18));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_algo, $niv_comp19));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_res, $niv_comp20));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_mag, $niv_comp21));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_eco, $niv_comp22));
 
   header('Location: compte.php');

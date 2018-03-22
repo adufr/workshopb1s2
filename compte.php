@@ -18,13 +18,13 @@ if (isset($_POST['form_modif_email'])) {
       if (strlen($uti_mail < 50)) {
 
         // On vérifie que l'adresse mail n'est pas déjà enregistré dans la bdd :
-        $req_mail = $bdd -> prepare("SELECT * FROM UTILISATEUR WHERE uti_mail = ?");
+        $req_mail = $bdd -> prepare("SELECT * FROM utilisateur WHERE uti_mail = ?");
         $req_mail -> execute(array($uti_mail));
         $mail_existe = $req_mail -> rowCount();
         if ($mail_existe == 0) {
 
           // Tout est bon : on insert l'utilisateur dans la bdd :
-          $req_inser = $bdd -> prepare("UPDATE UTILISATEUR set uti_mail = ? WHERE uti_id = ? ");
+          $req_inser = $bdd -> prepare("UPDATE utilisateur set uti_mail = ? WHERE uti_id = ? ");
           $req_inser -> execute(array($uti_mail, $_SESSION['uti_id']));
 
           // Mise à jour de la variable de sesssion :
@@ -66,13 +66,13 @@ if (isset($_POST['form_modif_mdp'])) {
       if (strlen($uti_mdp < 25)) {
 
         // On vérifie que l'ancien mdp est valide :
-        $req_uti = $bdd -> prepare("SELECT * FROM UTILISATEUR WHERE uti_mail = ? AND uti_mdp = ?");
+        $req_uti = $bdd -> prepare("SELECT * FROM utilisateur WHERE uti_mail = ? AND uti_mdp = ?");
         $req_uti -> execute(array($_SESSION['uti_mail'], $uti_mdp_old));
         $uti_existe = $req_uti -> rowCount();
         if ($uti_existe == "1") {
 
           // Tout est bon : on insert l'utilisateur dans la bdd :
-          $req_inser = $bdd -> prepare("UPDATE UTILISATEUR set uti_mdp = ? WHERE uti_id = ? ");
+          $req_inser = $bdd -> prepare("UPDATE utilisateur set uti_mdp = ? WHERE uti_id = ? ");
           $req_inser -> execute(array($uti_mdp, $_SESSION['uti_id']));
 
           $erreur = "Votre mot de passe a bien été mis à jour !";
