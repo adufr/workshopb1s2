@@ -1,7 +1,7 @@
 .logos
 {
-  width: 70px;
-  height:10%;
+  width: 70%;
+  height:15%;
 }
 
 h2
@@ -22,8 +22,8 @@ h2
 
 
 .wrapper{
-  width: 100%;
-  margin-left: 40%;
+  width: 150%;
+  margin: 10 0 0 25;
   display: inline-block;
   border: none;
   font-size: 60%;
@@ -86,5 +86,3 @@ h2
     text-align: center;
     margin-top: 60px;
 }
-
-
