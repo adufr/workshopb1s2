@@ -18,6 +18,7 @@ p {
 }
 
 #frame {
+  margin-top: 50px;
   width: 95%;
   min-width: 360px;
   max-width: 1000px;
