@@ -15,12 +15,13 @@ include('header.php');
 				<div class="h2-text">
 					<p><br/><br/></p>
 					<h2 >Langages de programmations</h2>
+					<p><br/><br/></p>
 				</div>
 			</div>
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=htmlcss" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/html_css.png" alt="html_css.png">
 						</div>
@@ -32,7 +33,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=php" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/php.png" alt="php.png">
 						</div>
@@ -44,7 +45,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=js" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/javascript.png" alt="js.png">
 						</div>
@@ -56,7 +57,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=bdd" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/bdd.png" alt="bdd.png">
 						</div>
@@ -68,7 +69,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=c" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/c-c++.png" alt="c-c++.png">
 						</div>
@@ -80,7 +81,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=csharp" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/c-sharp.png" alt="c-sharp.png">
 						</div>
@@ -92,7 +93,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=python" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/python.png" alt="python.png">
 						</div>
@@ -104,7 +105,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=batch" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/batch.png" alt="batch.png">
 						</div>
@@ -116,7 +117,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=perl" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/perl.png" alt="perl.png">
 						</div>
@@ -128,7 +129,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=ruby" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/ruby.png" alt="ruby.png">
 						</div>
@@ -140,11 +141,11 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=vbnet" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/visualBasic.png" alt="vb.png">
 						</div>
-						<h2>VisualBasic .NET</h2>
+						<h2>VisualBasic & .NET</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</a>
 				</div>
@@ -156,18 +157,18 @@ include('header.php');
 				<div class="h2-text">
 					<p><br/><br/></p>
 					<p><br/><br/></p>
-					<h2 >Frameworks</h2>
+					<h2>Frameworks</h2>
 					<p><br/><br/></p>
 				</div>
 			</div>
 
 			<div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=phpframework" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/php-framework.png" alt="php-fw.png">
 						</div>
-						<h2>PHP frameworks</h2>
+						<h2>Frameworks PHP</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</a>
 				</div>
@@ -175,11 +176,11 @@ include('header.php');
 
 			<div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=jsframework" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/jsfw.png" alt="jsfw.png">
 						</div>
-						<h2>Javascript frameworks</h2>
+						<h2>Frameworks Javascript</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</a>
 				</div>
@@ -198,7 +199,7 @@ include('header.php');
 
 			<div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=linux" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/linux.png" alt="linux.png">
 						</div>
@@ -210,7 +211,7 @@ include('header.php');
 
 			<div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=windows" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/windows.png" alt="windows.png">
 						</div>
@@ -222,7 +223,7 @@ include('header.php');
 
 			<div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=mobile" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/Swift.png" alt="appmobile.png">
 						</div>
@@ -246,7 +247,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=anglais" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/anglais.png" alt="anglais.png">
 						</div>
@@ -258,7 +259,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=francais" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/francais.png" alt="fr.png">
 						</div>
@@ -270,7 +271,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=maths" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/maths.png" alt="mayhs.png">
 						</div>
@@ -282,11 +283,11 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=algo" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/algo.png" alt="algo.png">
 						</div>
-						<h2>Algorithme</h2>
+						<h2>Algorithmie</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</a>
 				</div>
@@ -294,7 +295,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=reseaux" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/reseau.png" alt="reseau.png">
 						</div>
@@ -306,7 +307,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=management" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/management.png" alt="management.png">
 						</div>
@@ -318,7 +319,7 @@ include('header.php');
 
 			<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 				<div class="fh5co-main-service">
-					<a href="#" class="fh5co-block-links text-center">
+					<a href="topic.php?page=economie" class="fh5co-block-links text-center">
 						<div class="icon-circle">
 							<img class="logos" src="images/logos/economie.png" alt="economie.png">
 						</div>

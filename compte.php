@@ -211,7 +211,7 @@ if (isset($erreur)) {
         </ul>
       </li>
       <li>
-        <a href="#">
+        <a href="competences.php">
           <i class="glyphicon glyphicon-tasks"></i>
           Matières
         </a>

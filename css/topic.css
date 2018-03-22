@@ -1,0 +1,97 @@
+/* AUTRE */
+.glyphicon.topicred {
+  padding-top: 13px;
+  padding-left: 15px;
+  font-size: 50px;
+  color: #b52020;
+}
+.glyphicon.topicgreen {
+  padding-top: 13px;
+  padding-left: 13px;
+  font-size: 50px;
+  color: #008c2e;
+}
+
+
+/* HAUT DE LA PAGE */
+#topic_titre {
+  margin-left: 5%;
+  float: left;
+}
+#topic_boutton_nouveau {
+  margin-top: 20px;
+  margin-right: 5%;
+  float: right;
+}
+#topic_description {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 35px;
+
+  text-align: justify;
+}
+
+
+/* Topic */
+#topic_container {
+  margin-right: 5%;
+  margin-left: 5%;
+  height: 75px;
+  color: white;
+  background-color: #444444;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  word-wrap: break-word;
+}
+#topic_container:hover {
+  background-color: #595959;
+}
+
+
+
+#topic_etat {
+  margin-top: -1px;
+  height: 75px;
+  width: 80px;
+  float: left;
+  background-color: #2d2d2d;
+
+}
+#topic_recent {
+  height: 75px;
+  width: 80px;
+  float: right;
+  background-color: lightgreen;
+  padding-top: 7px;
+  text-align: center;
+}
+#topic_resume {
+  padding-left: -50px;
+  height: 75px;
+  width: 28%;
+  float: left;
+}
+
+
+
+
+#topic_sujet_titre {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#topic_sujet_message {
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+
+
+
+.topic_truncate{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 4000px;
+}

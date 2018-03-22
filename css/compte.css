@@ -52,12 +52,13 @@ SIDEBAR STYLE
     transition: all 0.3s;
     margin-top: -30px;
     margin-bottom: -80px;
+    height: 100%;
+    position: fixed;
 }
 
 #sidebar.active {
     min-width: 80px;
     max-width: 80px;
-    text-align: center;
 }
 
 #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {

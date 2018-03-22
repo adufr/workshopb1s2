@@ -42,13 +42,13 @@ if (isset($_POST['form_inscription'])) {
 											if (filter_var($uti_mail, FILTER_VALIDATE_EMAIL)) {
 
 												// On vérifie que l'adresse mail n'est pas déjà enregistré dans la bdd :
-												$req_mail = $bdd -> prepare("SELECT * FROM UTILISATEUR WHERE uti_mail = ?");
+												$req_mail = $bdd -> prepare("SELECT * FROM utilisateur WHERE uti_mail = ?");
 			                  $req_mail -> execute(array($uti_mail));
 			                  $mail_existe = $req_mail -> rowCount();
 			                  if ($mail_existe == 0) {
 
 													// Tout est bon : on insert l'utilisateur dans la bdd :
-													$req_inser = $bdd -> prepare("INSERT INTO UTILISATEUR(uti_nom, uti_prenom, uti_mail, uti_sexe, uti_classe, uti_campus, uti_mdp, uti_pdp) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
+													$req_inser = $bdd -> prepare("INSERT INTO utilisateur(uti_nom, uti_prenom, uti_mail, uti_sexe, uti_classe, uti_campus, uti_mdp, uti_pdp) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
 			                    $req_inser -> execute(array($uti_nom, $uti_prenom, $uti_mail, $uti_sexe, $uti_classe, $uti_campus, $uti_mdp, $uti_pdp));
 			                    $erreur = '';
 
@@ -57,7 +57,7 @@ if (isset($_POST['form_inscription'])) {
 
 
 													// On vérifie que le couple email / mot de passe existe dans la bdd :
-													$req_uti = $bdd -> prepare("SELECT * FROM UTILISATEUR WHERE uti_mail = ? AND uti_mdp = ?");
+													$req_uti = $bdd -> prepare("SELECT * FROM utilisateur WHERE uti_mail = ? AND uti_mdp = ?");
 													$req_uti -> execute(array($uti_mail, $uti_mdp));
 													$uti_existe = $req_uti -> rowCount();
 													if ($uti_existe == "1") {

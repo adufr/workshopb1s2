@@ -1,0 +1,79 @@
+/* AUTRE */
+.glyphicon.discussionred {
+  padding-top: 13px;
+  padding-left: 15px;
+  font-size: 50px;
+  color: #b52020;
+}
+.glyphicon.discussiongreen {
+  padding-top: 13px;
+  padding-left: 13px;
+  font-size: 50px;
+  color: #008c2e;
+}
+
+
+/* HAUT DE LA PAGE */
+#discussion_titre {
+  margin-left: 5%;
+  float: left;
+}
+#discussion_boutton_repondre {
+  margin-top: 20px;
+  margin-right: 5%;
+  float: right;
+}
+#discussion_description {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 35px;
+
+  text-align: justify;
+}
+
+
+/* discussion */
+#discussion_container {
+  margin-right: 5%;
+  margin-left: 5%;
+  height: auto;
+  color: white;
+  background-color: #545454;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+#discussion_message_auteur {
+  float: left;
+  padding-top: 2px;
+  text-align: center;
+  margin-right: 2%;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #444444;
+  height: 150px;
+  width: 150px;
+}
+#discussion_message_auteur_pdp {
+  height: 100px;
+  width: 100px;
+}
+#discussion_message_date {
+  font-size: 12px;
+}
+
+#discussion_message_message {
+  margin-top: -10px;
+}
+
+
+
+
+.discussion_truncate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 5000px;
+}
