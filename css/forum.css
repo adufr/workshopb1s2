@@ -85,3 +85,13 @@
   width: 72%;
   margin-top: 15%;
 }
+
+.titre
+{
+
+  overflow: auto;
+  text-align: center;
+  height:30%;
+}
+
+h2{font-size: 3em; }

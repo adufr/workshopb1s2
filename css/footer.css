@@ -141,7 +141,7 @@
 	line-height: 35px;
 
 	margin-right: 3px;
-	margin-bottom: 5px;
+	padding-top: 10px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

@@ -11,11 +11,10 @@ include('header.php');
 		<div class="row">
 
 			<!-- 1e catégorie de forums, les langages de prog -->
-			<div class="col-md-12">
-				<div class="fh5co-heading text-center">
+			<div class="col-md-12 titre">
+				<div class="h2-text">
 					<p><br/><br/></p>
-					<h2 class="fh5co-heading-title">Langages de programmations</h2>
-					<p><br/><br/></p>
+					<h2 >Langages de programmations</h2>
 				</div>
 			</div>
 
@@ -153,11 +152,11 @@ include('header.php');
 
 
 			<!-- 2e catégorie : les frameworks -->
-			<div class="col-md-12">
-				<div class="fh5co-heading text-center">
+			<div class="col-md-12 titre">
+				<div class="h2-text">
 					<p><br/><br/></p>
 					<p><br/><br/></p>
-					<h2 class="fh5co-heading-title">Frameworks</h2>
+					<h2 >Frameworks</h2>
 					<p><br/><br/></p>
 				</div>
 			</div>
@@ -188,11 +187,11 @@ include('header.php');
 
 
 			<!-- 3e catégorie : Systèmes d'exploitation & mobile-->
-			<div class="col-md-12">
-				<div class="fh5co-heading text-center">
+			<div class="col-md-12 titre">
+				<div class="h2-text">
 					<p><br/><br/></p>
 					<p><br/><br/></p>
-					<h2 class="fh5co-heading-title">Systèmes d'exploitation & mobile</h2>
+					<h2 >Systèmes d'exploitation & mobile</h2>
 					<p><br/><br/></p>
 				</div>
 			</div>
@@ -233,13 +232,14 @@ include('header.php');
 				</div>
 			</div>
 
+<p><br/><br/></p>
 
 			<!-- 4e catégorie : les cours généraux -->
-			<div class="col-md-12">
-				<div class="fh5co-heading text-center">
+			<div class="col-md-12 titre">
+				<div class="h2-text">
 					<p><br/><br/></p>
 					<p><br/><br/></p>
-					<h2 class="fh5co-heading-title">Matières générales</h2>
+					<h2 >Matières générales</h2>
 					<p><br/><br/></p>
 				</div>
 			</div>
