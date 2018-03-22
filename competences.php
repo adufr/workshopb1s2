@@ -45,7 +45,7 @@ if (isset($_POST['valider'])) {
   }
 
   if (isset($_POST['niv_comp6'])) {
-    $niv_comp1 = $_POST['niv_comp6'];
+    $niv_comp6 = $_POST['niv_comp6'];
   } else {
       $niv_comp6=0;
   }
