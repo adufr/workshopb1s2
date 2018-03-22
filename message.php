@@ -356,6 +356,8 @@ if (isset($_POST['form_connexion'])) {
           echo $_POST['envoimess'];
           $req_inser = $bdd -> prepare("INSERT INTO messages2(uti_id_emmeteur, uti_id_destinataire, message, date_heure_message) VALUES (?,?,?,?)");
           $req_inser -> execute(array($idemmeteur, $iddest, $envoimess, $datemess));
+
+          echo "<meta http-equiv='refresh' content='0'>";
         }
 
         ?>
