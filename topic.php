@@ -242,45 +242,44 @@
   <nav id="sidebar" style="float: left; margin-top: -500px;">
 
     <div class="sidebar-header">
-      <?php echo "<h3>".$_SESSION['uti_prenom']." ".$_SESSION['uti_nom']."</h3>";?>
-      <?php echo "<strong>".substr($_SESSION['uti_prenom'], 0, 1).substr($_SESSION['uti_nom'], 0, 1)."</strong>";?>
+      <h3>Utilisateurs compétants en <?php echo $_GET['page']; ?></h3>
+      <h5>Accedez à leurs profils pour leurs envoyer un messsage privé !</h5>
     </div>
 
     <ul class="list-unstyled components">
-      <li>
-        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
-          <i class="glyphicon glyphicon-briefcase"></i>
-          Profil
-        </a>
-        <ul class="collapse list-unstyled" id="pageSubmenu">
-          <li><a data-toggle='modal' href='#modifEmail'>Modifier email</a></li>
-          <li><a data-toggle='modal' href="#modifMdp">Modifier mot de passe</a></li>
-          <li><a data-toggle='modal' href="#modifPdp">Modifier photo de profil</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="competences.php">
-          <i class="glyphicon glyphicon-tasks"></i>
-          Matières
-        </a>
-      </li>
-      <li>
-        <a href="message.php?id_uti=<?php
-          $req = $bdd -> prepare('SELECT * FROM messages2 WHERE uti_id_destinataire = (SELECT MAX(uti_id_destinataire) FROM messages2 WHERE uti_id_emmeteur = ?)');
-          $req -> execute(array($idemmeteur));
-          $resulat = $req -> fetch();
-          echo $resultat['uti_id_destinataire'];
-         ?>">
-          <i class="glyphicon glyphicon-comment"></i>
-          Messages privés
-        </a>
-      </li>
-      <li class="active">
-        <a href="accueil.php">
-          <i class="glyphicon glyphicon-home"></i>
-          Accueil
-        </a>
-      </li>
+
+
+      <?php
+
+      $nomcomp = $_GET['page'];
+      $req2 = $bdd -> prepare('SELECT DISTINCT comp_id FROM competence WHERE comp_nom = ?');
+      $req2 -> execute(array($nomcomp));
+      $idcomps = $req2->fetchAll();
+
+      foreach ($idcomps as $idcomp) {
+        $req = $bdd -> prepare('SELECT * FROM affecter WHERE comp_id = ? ORDER BY niv_competence DESC');
+        $req -> execute(array($idcomp['comp_id']));
+        $infoscomps = $req->fetchAll();
+
+        foreach ($infoscomps as $infoscomp) {
+          $req2 = $bdd->prepare('SELECT  uti_id, uti_nom, uti_prenom, uti_pdp FROM utilisateur WHERE uti_id = ?');
+          $req2 -> execute(array($infoscomp['uti_id']));
+          $utiinfos = $req2->fetchAll();
+
+          foreach ($utiinfos as $utiinfo) {
+          echo "
+          <li class='active'>
+            <img src=''>
+              <a href='profil.php?id=".$utiinfo['uti_id']."'><p>".$utiinfo['uti_nom']." ".$utiinfo['uti_prenom']."</p></a>
+          </li>";
+        }
+      }
+}
+
+
+        ?>
+
+
     </ul>
 
   </nav>
