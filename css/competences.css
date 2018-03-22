@@ -1,0 +1,102 @@
+.logos
+{
+  width: 70px;
+  height:10%;
+}
+
+h2
+{
+  font-size: 120%;
+
+}
+
+.item
+{
+  margin-left: 25%;
+}
+
+.carousel-inner
+{
+  text-align: center;
+}
+
+
+.wrapper{
+  width: 100%;
+  margin-left: 40%;
+  display: inline-block;
+  border: none;
+  font-size: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapper input{
+  border: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0;
+}
+
+.wrapper label {
+  position: relative;
+  float: right;
+  color: #C8C8C8;
+}
+
+.wrapper label:before{
+  margin: 20%;
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 1.5em;
+  color: #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+
+.wrapper input:checked ~ label:before{
+  color: #FFC107;
+}
+
+.wrapper label:hover ~ label:before{
+  color: #ffdb70;
+}
+
+.wrapper label:hover:before{
+  color: #FFC107;
+}
+
+.faire
+{
+  text-align: center;
+  font-size: 150%;
+  margin-top: 5%;
+  margin-bottom: 9%;
+}
+
+.Valider
+{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.btn
+{
+    background-color: #644789;
+    font-size: 150%;
+    border-radius: 20%;
+    border-color: #513b6d;
+}
+
+.btn:hover
+{
+  background-color: #513b6d;
+  border-color: #644789;
+}
