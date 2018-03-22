@@ -124,6 +124,10 @@
         $req_inser_post = $bdd -> prepare("INSERT INTO post(post_message, post_forum, post_auteur, post_datecreation, post_estorigine, post_statut, post_estreponsea) VALUES(?, ?, ?, ?, ?, ?, ?)");
         $req_inser_post -> execute(array($post_message, $postforumorigine, $auteur_id, date('Y-m-d H:i:s'), 0, 1, $postorigine));
 
+        // On incrémente le nombre de messages de l'utilisateur :
+        $req_incre = $bdd -> prepare("UPDATE utilisateur SET uti_messages_envoyes = uti_messages_envoyes + 1 WHERE uti_id = ?");
+        $req_incre -> execute(array($auteur_id));
+
         sleep(0.2);
         echo "<meta http-equiv='refresh' content='0'>";
 

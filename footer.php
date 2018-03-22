@@ -4,13 +4,13 @@
 
   <div class="footer-left">
     <p class="footer-links">
-      <a href="accueil.php">Accueil</a>
+      <a href='accueil.php'>Accueil</a>
       ·
-      <a href="forum.php">Forum</a>
+      <a href='forum.php'>Forum</a>
       ·
-      <a href="apropos.php">A propos</a>
+      <a data-toggle='modal' href='#comingSoon'>A propos</a>
       ·
-      <a href="contact.php">Contact</a>
+      <a data-toggle='modal' href='#comingSoon'>Contact</a>
     </p>
     <p class="footer-company-name">EPSI &copy; 2018</p>
   </div>
@@ -38,14 +38,14 @@
 
     <p class="footer-company-about">
       <span>A propos de l'EPSI :</span>
-      Première école d’informatique en France, 
+      Première école d’informatique en France,
       première à avoir obtenu le titre niveau I RNCP (Bac+5 certifié par l’État) et résolument engagée auprès des entreprises,
     </p>
 
     <div class="footer-icons">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a data-toggle='modal' href='#comingSoon'><i class="fa fa-facebook"></i></a>
+      <a data-toggle='modal' href='#comingSoon'><i class="fa fa-twitter"></i></a>
+      <a data-toggle='modal' href='#comingSoon'><i class="fa fa-linkedin"></i></a>
     </div>
 
   </div>
@@ -59,6 +59,29 @@
 </div>
 
 
+<!-- Modal coming soon -->
+<div data-show="false" class="modal" id="comingSoon" role="dialog">
+
+  <div class="modal-dialog">
+    <form method="POST" class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">A venir</h4>
+      </div>
+
+      <div class="modal-body">
+        <p style='text-align: center;'>Cette fonctionnalité n'est pas encore disponible !</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+      </div>
+
+    </form>
+  </div>
+
+</div>
 
 
 <script>

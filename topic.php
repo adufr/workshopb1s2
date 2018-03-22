@@ -110,6 +110,9 @@
             $req_inser_post = $bdd -> prepare("INSERT INTO post(post_titre, post_message, post_forum, post_auteur, post_datecreation, post_estorigine, post_statut) VALUES(?, ?, ?, ?, ?, ?, ?)");
             $req_inser_post -> execute(array($post_titre, $post_message, $_GET['page'], $auteur_id, date('Y-m-d H:i:s'), 1, 1));
 
+            // On incrémente le nombre de messages de l'utilisateur :
+            $req_incre = $bdd -> prepare("UPDATE utilisateur SET uti_messages_envoyes = uti_messages_envoyes + 1 WHERE uti_id = ?");
+            $req_incre -> execute(array($auteur_id));
 
           } else {
             $erreur = "Le message ne doit pas dépasser 5000 caractères";

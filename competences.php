@@ -243,6 +243,9 @@ if (isset($_POST['valider'])) {
     $req_inser0 = $bdd -> prepare("INSERT INTO AFFECTER(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
     $req_inser0 -> execute(array($uti_id, $id_comp_eco, $niv_comp22));
 
+
+    
+
   }
 
 

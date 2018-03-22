@@ -35,9 +35,9 @@ if (isset($_GET['id'])) {
                         <i class="glyphicon glyphicon-list profilicon"></i>
                             <?php
                                 if (isset($uti_infos['uti_messages_envoyes'])) {
-                                    echo "A posté ".$uti_infos['uti_messages_envoyes']." messages";
+                                    echo "A posté ".$uti_infos['uti_messages_envoyes']." messages</br></br>";
                                 } else {
-                                    echo "A posté 0 message</br></br>";
+                                    echo "Erreur</br></br>";
                                 }
                             ?>
 
