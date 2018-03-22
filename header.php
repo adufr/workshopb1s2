@@ -82,7 +82,7 @@ if (isset($_POST['form_connexion'])) {
             <li><a href="forum.php">Forum</a></li>
             <?php
             if (isset($_SESSION['uti_mail'])) {
-              echo"<li><a href='messages.php'>Mes messages</a></li>";
+              echo"<li><a href='message.php'>Mes messages</a></li>";
             }?>
           </ul>
 
@@ -91,6 +91,14 @@ if (isset($_POST['form_connexion'])) {
           if (isset($_SESSION['uti_mail'])) {
             echo "
             <ul class='nav navbar-nav navbar-right'>
+            <form method='POST' action='recherche.php' class='navbar-form navbar-left'>
+              <div class='input-group'>
+                <input style='background-color: #fff; color: black;' type='text' name='recherche' class='form-control' placeholder='Rechercher'>
+                <div class='input-group-btn'>
+                  <button style='background-color: #fff; height: 34px;' class='btn btn-default' name='form_recherche' type='submit'><i class='glyphicon glyphicon-search'></i></button>
+                </div>
+              </div>
+            </form>
             <li><a href='compte.php'><span class='glyphicon glyphicon-user'></span>  ".$_SESSION['uti_prenom']." ".$_SESSION['uti_nom']."</a></li>
             <li><a href='deconnexion.php'><span class='glyphicon glyphicon-log-in'></span> Se déconnecter</a></li>
             </ul>
@@ -98,6 +106,14 @@ if (isset($_POST['form_connexion'])) {
           } else {
             echo "
             <ul class='nav navbar-nav navbar-right'>
+            <form method='POST' action='recherche.php' class='navbar-form navbar-left'>
+              <div class='input-group'>
+                <input style='background-color: #707070; color: black;' type='text' name='recherche' class='form-control' placeholder='Rechercher'>
+                <div class='input-group-btn'>
+                  <button style='background-color: #707070' class='btn btn-default' name='form_recherche' type='submit'><i class='glyphicon glyphicon-search'></i></button>
+                </div>
+              </div>
+            </form>
             <li><a href='inscription.php'><span class='glyphicon glyphicon-user'></span>  Inscription</a></li>
             <li><a data-toggle='modal' href='#connexion'><span class='glyphicon glyphicon-log-in'></span>  Connexion</a></li>
             </ul>
