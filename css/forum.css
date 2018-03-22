@@ -88,10 +88,9 @@
 
 .titre
 {
-
   overflow: auto;
   text-align: center;
-  height:30%;
+  width: 100%
 }
 
-h2{font-size: 3em; }
+h2{font-size: 250%; }
