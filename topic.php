@@ -196,7 +196,7 @@
   // On affiche tout les topics :
   foreach ($post_infos as $post_info) {
 
-    $req_uti = $bdd -> prepare("SELECT * FROM UTILISATEUR WHERE uti_id = ?");
+    $req_uti = $bdd -> prepare("SELECT * FROM utilisateur WHERE uti_id = ?");
     $req_uti -> execute(array($post_info["post_auteur"]));
     $uti_infos = $req_uti->fetch();
 
