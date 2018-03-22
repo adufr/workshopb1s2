@@ -84,19 +84,7 @@ h2
 .Valider
 {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 60px;
 }
 
-.btn
-{
-    background-color: #644789;
-    font-size: 150%;
-    border-radius: 20%;
-    border-color: #513b6d;
-}
 
-.btn:hover
-{
-  background-color: #513b6d;
-  border-color: #644789;
-}

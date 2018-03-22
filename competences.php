@@ -928,7 +928,7 @@ if (isset($_POST['valider'])) {
 
 
   <div class="form-group valider">
-  	<button type="submit" name="valider" class="btn btn-primary">Valider</button>
+  	<button type="submit" name="valider" class="btn btn-primary btn-lg ">Valider</button>
   </div>
 
 </div>
