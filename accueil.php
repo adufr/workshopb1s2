@@ -35,9 +35,9 @@ $(document).ready(function() {
 			<h2>Bienvenue sur My HELPSI</h2>
 			</br>
 		</header>
-		<p>My HELPSI est une plateforme permettant à ses utilisateurs,</br>
-			élèves de WIS ou d'EPSI, de partager leur savoir, autant autour de</br>
-			l'informatique que du reste. Le but de ce site est de faciliter les échanges</br>
+		<p>My HELPSI est une plateforme permettant à ses</br>
+			 utilisateurs, élèves de WIS ou d'EPSI, de partager leur savoir, autour de</br>
+			l'informatique et des autres sujets. Le but de ce site est de faciliter les échanges</br>
 			entre étudiants, autant au niveau local au sein d'un campus qu'au niveau national.</br></br>
 		</p>
 		<footer>
@@ -50,10 +50,10 @@ $(document).ready(function() {
 			<h2>Le forum</h2></br>
 		</header>
 		<p>My HELPSI met à votre disposition un large forum, comprenant</br>
-			plusieurs sous-forum, chacun étant dédié à une compétence en particulier.</br>
+			plusieurs sous-forums, chacun étant dédié à une compétence en particulier.</br>
 			De la programmation au cours de droit en passant par l'anglais et le management,</br>
-			si vous chercher de l'aide, vous êtes au bon endroit. De plus, vous pourrez trouver des</br>
-			tutoriaux rédigé par des étudiants membres, qui vous permettront de découvrir de nouvelles</br>
+			si vous cherchez de l'aide, vous êtes au bon endroit ! De plus, vous pourrez trouver des</br>
+			tutoriaux rédigés par des étudiants membres, qui vous permettront de découvrir de nouvelles</br>
 			technologies !</br></br></br>
 		</p>
 		<footer>
