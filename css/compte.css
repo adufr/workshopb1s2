@@ -59,6 +59,7 @@ SIDEBAR STYLE
 #sidebar.active {
     min-width: 80px;
     max-width: 80px;
+      z-index: 10;
 }
 
 #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
