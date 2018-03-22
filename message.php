@@ -243,8 +243,8 @@ if (isset($_POST['form_connexion'])) {
               $utiinfos = $req2->fetchAll();
 
               foreach ($utiinfos as $utiinfo) {
-                $req3 = $bdd->prepare('SELECT DISTINCT message FROM messages2 WHERE (uti_id_emmeteur = ? OR uti_id_emmeteur = ?) AND (uti_id_destinataire = ? OR uti_id_destinataire = ?) = ? AND id_message = (SELECT MAX(id_message) FROM messages2) ');
-                $req3 -> execute(array($idemmeteur, $utiinfo['uti_id'], $idemmeteur, $utiinfo['uti_id']));
+                $req3 = $bdd->prepare('SELECT message FROM messages2 WHERE uti_id_emmeteur = ? AND uti_id_destinataire = ? AND id_message = (SELECT MAX(id_message) FROM messages2) ');
+                $req3 -> execute(array($idemmeteur, $utiinfo['uti_id']));
                 $derniermess = $req3->fetch();
                 echo "<a style='color: white; text-decoration: none;' href='message.php?id_uti=".$utiinfo['uti_id']."'>
                 <li class='contact'>
