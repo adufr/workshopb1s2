@@ -270,8 +270,28 @@ if (isset($erreur)) {
                             echo "Erreur</br></br>";
                         }
                     ?>
+<?php
 
-            </p>
+                    $iduti = $uti_infos['uti_id'];
+                    $req2 = $bdd -> prepare('SELECT * FROM affecter WHERE uti_id = ?');
+                    $req2 -> execute(array($iduti));
+                    $infoscomps = $req2->fetchAll();
+
+                    foreach ($infoscomps as $infoscomp) {
+
+                      $req3 = $bdd -> prepare('SELECT DISTINCT comp_nom FROM competence WHERE comp_id = ?');
+                      $req3 -> execute(array($infoscomp['comp_id']));
+                      $idcomps = $req3->fetchAll();
+
+                      foreach ($idcomps as $idcomp) {
+                        echo "
+                </br>
+                <i class='glyphicon glyphicon-minus profilicon'></i>
+                ".$idcomp['comp_nom']." et ".$infoscomp['niv_competence']."";
+}
+}
+?>
+
 
         </div>
 
