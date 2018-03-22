@@ -38,7 +38,8 @@
 
     <p class="footer-company-about">
       <span>A propos de l'EPSI :</span>
-      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+      Première école d’informatique en France, 
+      première à avoir obtenu le titre niveau I RNCP (Bac+5 certifié par l’État) et résolument engagée auprès des entreprises,
     </p>
 
     <div class="footer-icons">

@@ -2,8 +2,27 @@
 <?php
 include('header.php');
 ?>
+<?php
+function recupererDernierPost($forum, $bdd2) {
 
+  $requete = $bdd2 -> prepare('SELECT * FROM post WHERE post_id = (SELECT MAX(post_id) FROM post WHERE post_forum = ?)');
+  $requete -> execute(array($forum));
+  $resultat = $requete -> fetch();
 
+  $req = $bdd2 -> prepare('SELECT * FROM utilisateur WHERE uti_id = ?');
+  $req -> execute(array($resultat['post_auteur']));
+  $resultatUti = $req -> fetch();
+  $date = strtotime($resultat['post_datecreation']);
+  if (isset($resultatUti['uti_prenom'])) {
+    echo "<p>Dernier message par ".$resultatUti['uti_prenom']." ".substr($resultatUti['uti_nom'], 0, 1).".</br>
+    ".date('d', $date)."/".date('m', $date)."/".date('y', $date)." à ".date('H', $date)."h".date('i', $date)."
+    </p>";
+  } else {
+    echo "<p>Aucun message</p>";
+  }
+} ?>
+
+<link rel="stylesheet" type="text/php" href="topic.php"/>
 <link rel="stylesheet" type="text/css" href="css/forum.css"/>
 
 <main id="fh5co-main" role="main">
@@ -26,7 +45,7 @@ include('header.php');
 							<img class="logos" src="images/logos/html_css.png" alt="html_css.png">
 						</div>
 						<h2>HTML & CSS</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("htmlcss", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -38,7 +57,7 @@ include('header.php');
 							<img class="logos" src="images/logos/php.png" alt="php.png">
 						</div>
 						<h2>PHP</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("php", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -50,7 +69,7 @@ include('header.php');
 							<img class="logos" src="images/logos/javascript.png" alt="js.png">
 						</div>
 						<h2>Javascript</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<?php recupererDernierPost("js", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -62,7 +81,7 @@ include('header.php');
 							<img class="logos" src="images/logos/bdd.png" alt="bdd.png">
 						</div>
 						<h2>Base de données</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("bdd", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -74,8 +93,7 @@ include('header.php');
 							<img class="logos" src="images/logos/c-c++.png" alt="c-c++.png">
 						</div>
 						<h2>C & C++</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</a>
+						<?php recupererDernierPost("c", $bdd); ?>
 				</div>
 			</div>
 
@@ -86,7 +104,7 @@ include('header.php');
 							<img class="logos" src="images/logos/c-sharp.png" alt="c-sharp.png">
 						</div>
 						<h2>C#</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("csharp", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -98,8 +116,7 @@ include('header.php');
 							<img class="logos" src="images/logos/python.png" alt="python.png">
 						</div>
 						<h2>Python</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</a>
+						 <?php recupererDernierPost("python", $bdd); ?>
 				</div>
 			</div>
 
@@ -110,7 +127,7 @@ include('header.php');
 							<img class="logos" src="images/logos/batch.png" alt="batch.png">
 						</div>
 						<h2>Batch</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("batch", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -122,7 +139,7 @@ include('header.php');
 							<img class="logos" src="images/logos/perl.png" alt="perl.png">
 						</div>
 						<h2>Perl</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("perl", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -134,7 +151,7 @@ include('header.php');
 							<img class="logos" src="images/logos/ruby.png" alt="ruby.png">
 						</div>
 						<h2>Ruby</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("ruby", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -146,7 +163,7 @@ include('header.php');
 							<img class="logos" src="images/logos/visualBasic.png" alt="vb.png">
 						</div>
 						<h2>VisualBasic & .NET</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<?php recupererDernierPost("vbnet", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -169,7 +186,7 @@ include('header.php');
 							<img class="logos" src="images/logos/php-framework.png" alt="php-fw.png">
 						</div>
 						<h2>Frameworks PHP</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<?php recupererDernierPost("phpframework", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -181,7 +198,7 @@ include('header.php');
 							<img class="logos" src="images/logos/jsfw.png" alt="jsfw.png">
 						</div>
 						<h2>Frameworks Javascript</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<?php recupererDernierPost("jsframework", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -204,7 +221,7 @@ include('header.php');
 							<img class="logos" src="images/logos/linux.png" alt="linux.png">
 						</div>
 						<h2>Linux</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("linux", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -216,8 +233,7 @@ include('header.php');
 							<img class="logos" src="images/logos/windows.png" alt="windows.png">
 						</div>
 						<h2>Windows</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</a>
+						<?php recupererDernierPost("windows", $bdd); ?>
 				</div>
 			</div>
 
@@ -228,7 +244,7 @@ include('header.php');
 							<img class="logos" src="images/logos/Swift.png" alt="appmobile.png">
 						</div>
 						<h2>Developpement mobile</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("mobile", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -252,7 +268,7 @@ include('header.php');
 							<img class="logos" src="images/logos/anglais.png" alt="anglais.png">
 						</div>
 						<h2>Anglais</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("anglais", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -264,8 +280,7 @@ include('header.php');
 							<img class="logos" src="images/logos/francais.png" alt="fr.png">
 						</div>
 						<h2>Français</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</a>
+						<?php recupererDernierPost("francais", $bdd); ?>
 				</div>
 			</div>
 
@@ -276,7 +291,7 @@ include('header.php');
 							<img class="logos" src="images/logos/maths.png" alt="mayhs.png">
 						</div>
 						<h2>Mathématiques</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<?php recupererDernierPost("maths", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -288,7 +303,7 @@ include('header.php');
 							<img class="logos" src="images/logos/algo.png" alt="algo.png">
 						</div>
 						<h2>Algorithmie</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("algo", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -300,7 +315,7 @@ include('header.php');
 							<img class="logos" src="images/logos/reseau.png" alt="reseau.png">
 						</div>
 						<h2>Réseaux</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<?php recupererDernierPost("reseaux", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -312,7 +327,7 @@ include('header.php');
 							<img class="logos" src="images/logos/management.png" alt="management.png">
 						</div>
 						<h2>Management</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("management", $bdd); ?>
 					</a>
 				</div>
 			</div>
@@ -324,7 +339,7 @@ include('header.php');
 							<img class="logos" src="images/logos/economie.png" alt="economie.png">
 						</div>
 						<h2>Economie</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<?php recupererDernierPost("economie", $bdd); ?>
 					</a>
 				</div>
 			</div>
