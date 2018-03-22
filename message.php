@@ -81,10 +81,6 @@ if (isset($_POST['form_connexion'])) {
           <ul class="nav navbar-nav">
             <li class="active"><a class="police2" href="accueil.php">Accueil</a></li>
             <li><a class="police2" href="forum.php">Forum</a></li>
-            <?php
-            if (isset($_SESSION['uti_mail'])) {
-              echo"<li><a class='police2' href='messages.php'>Mes messages</a></li>";
-            }?>
           </ul>
 
 

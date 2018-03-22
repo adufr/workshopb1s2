@@ -80,10 +80,6 @@ if (isset($_POST['form_connexion'])) {
           <ul class="nav navbar-nav">
             <li class="active"><a href="accueil.php">Accueil</a></li>
             <li><a href="forum.php">Forum</a></li>
-            <?php
-            if (isset($_SESSION['uti_mail'])) {
-              echo"<li><a href='message.php'>Mes messages</a></li>";
-            }?>
           </ul>
 
 

@@ -174,7 +174,8 @@
         <button id="topic_boutton_nouveau" type="button" class="btn btn-primary btn-lg" data-toggle='modal' href="#modalNouveauPost">Nouveau sujet</button>
       <?php } ?>
     </div>
-  </div>k
+  </div>
+
 
   <div class="row">
     <h3 id="topic_description"><?php echo $desc; ?></h3>
