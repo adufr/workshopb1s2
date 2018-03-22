@@ -233,15 +233,70 @@
     </a>
 
 
-  <?php }
-  ?>
+  <?php } ?>
+</div>
 
+<link rel="stylesheet" type="text/css" href="css/compte.css"/>
+<div class="wrapper">
+  <!-- Sidebar Holder -->
+  <nav id="sidebar" style="float: left; margin-top: -500px;">
 
+    <div class="sidebar-header">
+      <?php echo "<h3>".$_SESSION['uti_prenom']." ".$_SESSION['uti_nom']."</h3>";?>
+      <?php echo "<strong>".substr($_SESSION['uti_prenom'], 0, 1).substr($_SESSION['uti_nom'], 0, 1)."</strong>";?>
+    </div>
+
+    <ul class="list-unstyled components">
+      <li>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+          <i class="glyphicon glyphicon-briefcase"></i>
+          Profil
+        </a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li><a data-toggle='modal' href='#modifEmail'>Modifier email</a></li>
+          <li><a data-toggle='modal' href="#modifMdp">Modifier mot de passe</a></li>
+          <li><a data-toggle='modal' href="#modifPdp">Modifier photo de profil</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="competences.php">
+          <i class="glyphicon glyphicon-tasks"></i>
+          Matières
+        </a>
+      </li>
+      <li>
+        <a href="message.php?id_uti=<?php
+          $req = $bdd -> prepare('SELECT * FROM messages2 WHERE uti_id_destinataire = (SELECT MAX(uti_id_destinataire) FROM messages2 WHERE uti_id_emmeteur = ?)');
+          $req -> execute(array($idemmeteur));
+          $resulat = $req -> fetch();
+          echo $resultat['uti_id_destinataire'];
+         ?>">
+          <i class="glyphicon glyphicon-comment"></i>
+          Messages privés
+        </a>
+      </li>
+      <li class="active">
+        <a href="accueil.php">
+          <i class="glyphicon glyphicon-home"></i>
+          Accueil
+        </a>
+      </li>
+    </ul>
+
+  </nav>
 </div>
 
 
 
-
+<!--Script JQuery pour affichage du menu -->
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#sidebar').hover(function () {
+    $('#sidebar').toggleClass('active');
+  });
+  $('#sidebar').toggleClass('active');
+});
+</script>
 
 
 <?php include('footer.php'); ?>
