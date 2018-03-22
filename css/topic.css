@@ -86,7 +86,11 @@
   font-size: 14px;
 }
 
-
+.navcotes
+{
+  float: left;
+  margin-left: -290px;
+}
 
 
 .topic_truncate{

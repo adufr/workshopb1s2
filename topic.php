@@ -167,6 +167,54 @@
 
 <div class="container">
 
+  <div class="wrapper">
+  <!-- Sidebar Holder -->
+    <nav id="sidebar" class="navcotes">
+
+      <div class="sidebar-header">
+        <h3>Utilisateurs compétants en <?php echo $_GET['page']; ?></h3>
+        <h5>Accedez à leurs profils pour leurs envoyer un messsage privé !</h5>
+      </div>
+
+      <ul class="list-unstyled components">
+
+
+        <?php
+
+        $nomcomp = $_GET['page'];
+        $req2 = $bdd -> prepare('SELECT DISTINCT comp_id FROM competence WHERE comp_nom = ?');
+        $req2 -> execute(array($nomcomp));
+        $idcomps = $req2->fetchAll();
+
+        foreach ($idcomps as $idcomp) {
+          $req = $bdd -> prepare('SELECT * FROM affecter WHERE comp_id = ? ORDER BY niv_competence DESC');
+          $req -> execute(array($idcomp['comp_id']));
+          $infoscomps = $req->fetchAll();
+
+          foreach ($infoscomps as $infoscomp) {
+            $req2 = $bdd->prepare('SELECT  uti_id, uti_nom, uti_prenom, uti_pdp FROM utilisateur WHERE uti_id = ?');
+            $req2 -> execute(array($infoscomp['uti_id']));
+            $utiinfos = $req2->fetchAll();
+
+            foreach ($utiinfos as $utiinfo) {
+            echo "
+            <li class='active'>
+              <img src=''>
+                <a href='profil.php?id=".$utiinfo['uti_id']."'><p>".$utiinfo['uti_nom']." ".$utiinfo['uti_prenom']."</p></a>
+            </li>";
+          }
+        }
+  }
+
+
+          ?>
+
+
+      </ul>
+
+    </nav>
+  </div>
+
   <div class="row">
     <div class="col-12 col-md-8">
       <h1 id="topic_titre"><?php echo $page; ?></h1>
@@ -237,53 +285,9 @@
 </div>
 
 <link rel="stylesheet" type="text/css" href="css/compte.css"/>
-<div class="wrapper">
-  <!-- Sidebar Holder -->
-  <nav id="sidebar" style="float: left; margin-top: -500px;">
-
-    <div class="sidebar-header">
-      <h3>Utilisateurs compétants en <?php echo $_GET['page']; ?></h3>
-      <h5>Accedez à leurs profils pour leurs envoyer un messsage privé !</h5>
-    </div>
-
-    <ul class="list-unstyled components">
 
 
-      <?php
 
-      $nomcomp = $_GET['page'];
-      $req2 = $bdd -> prepare('SELECT DISTINCT comp_id FROM competence WHERE comp_nom = ?');
-      $req2 -> execute(array($nomcomp));
-      $idcomps = $req2->fetchAll();
-
-      foreach ($idcomps as $idcomp) {
-        $req = $bdd -> prepare('SELECT * FROM affecter WHERE comp_id = ? ORDER BY niv_competence DESC');
-        $req -> execute(array($idcomp['comp_id']));
-        $infoscomps = $req->fetchAll();
-
-        foreach ($infoscomps as $infoscomp) {
-          $req2 = $bdd->prepare('SELECT  uti_id, uti_nom, uti_prenom, uti_pdp FROM utilisateur WHERE uti_id = ?');
-          $req2 -> execute(array($infoscomp['uti_id']));
-          $utiinfos = $req2->fetchAll();
-
-          foreach ($utiinfos as $utiinfo) {
-          echo "
-          <li class='active'>
-            <img src=''>
-              <a href='profil.php?id=".$utiinfo['uti_id']."'><p>".$utiinfo['uti_nom']." ".$utiinfo['uti_prenom']."</p></a>
-          </li>";
-        }
-      }
-}
-
-
-        ?>
-
-
-    </ul>
-
-  </nav>
-</div>
 
 
 
