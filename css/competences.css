@@ -12,7 +12,7 @@ h2
 
 .item
 {
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 .carousel-inner
@@ -20,15 +20,20 @@ h2
   text-align: center;
 }
 
+.image
+{
+    margin : 0 5 0 5;
+}
 
 .wrapper{
-  width: 150%;
-  margin: 10 0 0 25;
   display: inline-block;
   border: none;
   font-size: 60%;
-  left: 50%;
+  left: 30%;
   transform: translateX(-50%);
+  width: 150px;
+  height: 50px;
+  position: relative;
 }
 
 .wrapper input{
