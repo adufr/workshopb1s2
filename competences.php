@@ -177,71 +177,71 @@ if (isset($_POST['valider'])) {
   $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
   $req_inser0 -> execute(array($uti_id, $id_comp_hc, $niv_comp0));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_php, $niv_comp1));
+  $req_inser1 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser1 -> execute(array($uti_id, $id_comp_php, $niv_comp1));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_js, $niv_comp2));
+  $req_inser2 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser2 -> execute(array($uti_id, $id_comp_js, $niv_comp2));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_bdd, $niv_comp3));
+  $req_inser3 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser3 -> execute(array($uti_id, $id_comp_bdd, $niv_comp3));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_ccpp, $niv_comp4));
+  $req_inser4 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser4 -> execute(array($uti_id, $id_comp_ccpp, $niv_comp4));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_csh, $niv_comp5));
+  $req_inser5 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser5 -> execute(array($uti_id, $id_comp_csh, $niv_comp5));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_py, $niv_comp6));
+  $req_inser6 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser6 -> execute(array($uti_id, $id_comp_py, $niv_comp6));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_bat, $niv_comp7));
+  $req_inser7 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser7 -> execute(array($uti_id, $id_comp_bat, $niv_comp7));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_perl, $niv_comp8));
+  $req_inser8 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser8 -> execute(array($uti_id, $id_comp_perl, $niv_comp8));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_ruby, $niv_comp9));
+  $req_inser9 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser9 -> execute(array($uti_id, $id_comp_ruby, $niv_comp9));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_vb, $niv_comp10));
+  $req_inser10 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser10 -> execute(array($uti_id, $id_comp_vb, $niv_comp10));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_jsf, $niv_comp11));
+  $req_inser11 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser11 -> execute(array($uti_id, $id_comp_jsf, $niv_comp11));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_phpf, $niv_comp12));
+  $req_inser12 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser12 -> execute(array($uti_id, $id_comp_phpf, $niv_comp12));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_linux, $niv_comp13));
+  $req_inser13 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser13 -> execute(array($uti_id, $id_comp_linux, $niv_comp13));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_win, $niv_comp14));
+  $req_inser14 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser14 -> execute(array($uti_id, $id_comp_win, $niv_comp14));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_appmobile, $niv_comp15));
+  $req_inser15 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser15 -> execute(array($uti_id, $id_comp_appmobile, $niv_comp15));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_ang, $niv_comp16));
+  $req_inser16 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser16 -> execute(array($uti_id, $id_comp_ang, $niv_comp16));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_fran, $niv_comp17));
+  $req_inser17 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser17 -> execute(array($uti_id, $id_comp_fran, $niv_comp17));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_maths, $niv_comp18));
+  $req_inser18 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser18 -> execute(array($uti_id, $id_comp_maths, $niv_comp18));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_algo, $niv_comp19));
+  $req_inser19 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser19 -> execute(array($uti_id, $id_comp_algo, $niv_comp19));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_res, $niv_comp20));
+  $req_inser20 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser20 -> execute(array($uti_id, $id_comp_res, $niv_comp20));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_mag, $niv_comp21));
+  $req_inser21 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser21 -> execute(array($uti_id, $id_comp_mag, $niv_comp21));
 
-  $req_inser0 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
-  $req_inser0 -> execute(array($uti_id, $id_comp_eco, $niv_comp22));
+  $req_inser22 = $bdd -> prepare("REPLACE INTO affecter(uti_id, comp_id, niv_competence) VALUES(?, ?, ?)");
+  $req_inser22 -> execute(array($uti_id, $id_comp_eco, $niv_comp22));
 
   header('Location: compte.php');
 
@@ -294,7 +294,7 @@ if (isset($_POST['valider'])) {
 
 
           <!--php  -->
-          <div class="col-md-2 col-lg-2 col-xs-8 col-sm-8 image ">
+          <div class="col-md-2 col-lg-2 col-xs-8 col-sm-8 image">
             <div class="fh5co-main-service">
               <div class="icon-circle">
                 <img class="logos" src="images/logos/php.png" alt="php.png">
@@ -319,7 +319,6 @@ if (isset($_POST['valider'])) {
               <label for="st5-1"></label>
             </div>
           </div>
-
 
 
 
