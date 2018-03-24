@@ -72,7 +72,8 @@ if (isset($_POST['form_connexion'])) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="accueil.php">My HELPSI</a>
+
+          <a class="navbar-brand" href="accueil.php"><img style="margin-top: -10px; margin-right: -20px; width: 65px; height: 40px; float: left;" src="images/logoepsi.png"/>My HELPSI</a>
         </div>
 
 
