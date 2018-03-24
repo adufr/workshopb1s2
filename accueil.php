@@ -22,7 +22,7 @@ $(document).ready(function() {
 	<section id="header">
 		<header>
 			<h1>My HELPSI</h1>
-			<p>By EPSI Lyon</p>
+			<p>Partage de compétences</p>
 		</header>
 		<footer>
 			<a href="#banner" class="button style2 js-scrollTo">Qu'est-ce que My HELPSI ?</a>
@@ -36,9 +36,9 @@ $(document).ready(function() {
 			</br>
 		</header>
 		<p>My HELPSI est une plateforme permettant à ses</br>
-			 utilisateurs, élèves de WIS ou d'EPSI, de partager leur savoir, autour de</br>
-			l'informatique et des autres sujets. Le but de ce site est de faciliter les échanges</br>
-			entre étudiants, autant au niveau local au sein d'un campus qu'au niveau national.</br></br>
+			 utilisateurs (étudiants, alternants, stagiaires ou intervenants), de partager leur savoir autour de</br>
+			l'informatique et bien d'autres compétences. Le but de ce site est de faciliter les échanges</br>
+			entre utilisateurs, autant au niveau local au sein d'un campus qu'au niveau national.</br></br>
 		</p>
 		<footer>
 			<a href="#bannerdeux" class="button style2 js-scrollTo">Comment ?</a>

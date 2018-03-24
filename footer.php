@@ -12,25 +12,21 @@
       ·
       <a data-toggle='modal' href='#comingSoon'>Contact</a>
     </p>
-    <p class="footer-company-name">EPSI &copy; 2018</p>
+    <p class="footer-company-name">My HELPSI &copy; 2018</p>
   </div>
 
   <div class="footer-center">
 
     <div>
-      <i class="fa fa-map-marker"></i>
-      <p><span>17 Rue du Sgt M. Berthet</span>Lyon, France</p>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:myhelpsi@epsi.fr">myhelpsi@epsi.fr</a></p>
     </div>
 
     <div>
       <i class="fa fa-phone"></i>
-      <p>+334 72 85 38 50</p>
+      <p>04 72 85 37 60</p>
     </div>
 
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="mailto:info@lyon-epsi.fr">info@lyon-epsi.fr</a></p>
-    </div>
 
   </div>
 
@@ -38,7 +34,7 @@
 
     <p class="footer-company-about">
       <span>A propos de l'EPSI :</span>
-      Première école d’informatique en France,
+      Première école d’informatique créée en France,
       première à avoir obtenu le titre niveau I RNCP (Bac+5 certifié par l’État) et résolument engagée auprès des entreprises,
     </p>
 

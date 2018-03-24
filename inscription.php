@@ -169,10 +169,8 @@ if (isset($_POST['form_inscription'])) {
 						<option value="B3" <?php if (isset($uti_classe) && $uti_classe == "B3"){echo "selected";} ?>>B3
 						<option value="I4" <?php if (isset($uti_classe) && $uti_classe == "I4"){echo "selected";} ?>>I4
 						<option value="I5" <?php if (isset($uti_classe) && $uti_classe == "I5"){echo "selected";} ?>>I5
-						<option value="WIS1" <?php if (isset($uti_classe) && $uti_classe == "WIS1"){echo "selected";} ?>>WIS1
-						<option value="WIS2" <?php if (isset($uti_classe) && $uti_classe == "WIS2"){echo "selected";} ?>>WIS2
-						<option value="WIS3" <?php if (isset($uti_classe) && $uti_classe == "WIS3"){echo "selected";} ?>>WIS3
 						<option value="Enseignant" <?php if (isset($uti_classe) && $uti_classe == "Enseignant"){echo "selected";} ?>>Enseignant
+						<option value="Formation continue (POE)" <?php if (isset($uti_classe) && $uti_classe == "Formation continue (POE)"){echo "selected";} ?>>Formation continue (POE)
 		      </select>
     		</div>
 
