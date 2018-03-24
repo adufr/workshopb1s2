@@ -54,7 +54,7 @@
         <!--Statut du topic-->
         <div id="discussion_message_auteur" class="col">
           <img id="discussion_message_auteur_pdp" src='images/profil.png' />
-          <?php echo $auteur_infos['uti_prenom']." ".$auteur_infos['uti_nom']; ?>
+          <?php echo "</br>".$auteur_infos['uti_prenom']." ".$auteur_infos['uti_nom']; ?>
           <?php echo "</br><span id='discussion_message_date'>Le ".date('d', $date)."/".date('m', $date)."/".date('y', $date)." à ".date('H', $date)."h".date('i', $date)."</span>"; ?>
         </div>
       <p> <?php echo $post_infos['post_message']; ?></p>
