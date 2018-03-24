@@ -21,13 +21,13 @@ if (isset($_POST['valider'])) {
   }
 
   if (isset($_POST['niv_comp2'])) {
-    $niv_comp2 = $_POST['niv_comp1'];
+    $niv_comp2 = $_POST['niv_comp2'];
   } else {
     $niv_comp2=0;
   }
 
   if (isset($_POST['niv_comp3'])) {
-    $niv_comp3 = $_POST['niv_comp1'];
+    $niv_comp3 = $_POST['niv_comp3'];
   } else {
     $niv_comp3=0;
   }
@@ -290,7 +290,6 @@ if (isset($_POST['valider'])) {
               <input type="hidden" name="id_comp_hc" value="13"/>
               <label for="st5"></label>
             </div>
-
           </div>
 
 
@@ -876,13 +875,13 @@ if (isset($_POST['valider'])) {
               <input type="hidden" name="id_comp_mag" value="17"/>
               <label for="st2-21"></label>
               <input type="checkbox" name="niv_comp21" id="st3-21" value="3" />
-              <input type="hidden" name="id_comp__mag" value="17"/>
+              <input type="hidden" name="id_comp_mag" value="17"/>
               <label for="st3-21"></label>
               <input type="checkbox" name="niv_comp21" id="st4-21" value="2" />
-              <input type="hidden" name="id_comp__mag" value="17"/>
+              <input type="hidden" name="id_comp_mag" value="17"/>
               <label for="st4-21"></label>
               <input type="checkbox" name="niv_comp21" id="st5-21" value="1" />
-              <input type="hidden" name="id_comp__mag" value="17"/>
+              <input type="hidden" name="id_comp_mag" value="17"/>
               <label for="st5-21"></label>
             </div>
           </div>
