@@ -233,11 +233,15 @@ if (isset($_POST['form_connexion'])) {
 
             <?php
 
-            $req = $bdd->prepare('SELECT DISTINCT uti_id_destinataire FROM messages2 WHERE uti_id_emmeteur = ?');
-            $req -> execute(array($idemmeteur));
+            $req = $bdd->prepare('SELECT DISTINCT uti_id_destinataire, uti_id_emmeteur FROM messages2 WHERE uti_id_emmeteur = ? OR uti_id_destinataire = ?');
+            $req -> execute(array($idemmeteur, $idemmeteur));
             $utilisateursmess = $req->fetchAll();
 
             foreach ($utilisateursmess as $utimess){
+
+              if ($utimess['uti_id_emmeteur'] == $idemmeteur) {
+
+
               $req2 = $bdd->prepare('SELECT  uti_id, uti_nom, uti_prenom, uti_pdp FROM utilisateur WHERE uti_id = ?');
               $req2 -> execute(array($utimess['uti_id_destinataire']));
               $utiinfos = $req2->fetchAll();
@@ -259,9 +263,30 @@ if (isset($_POST['form_connexion'])) {
                 </li>
                 </a>";
               }
+            }else {
+              $req2 = $bdd->prepare('SELECT uti_id, uti_nom, uti_prenom, uti_pdp FROM utilisateur WHERE uti_id = ?');
+              $req2 -> execute(array($utimess['uti_id_emmeteur']));
+              $utiinfos = $req2->fetchAll();
+
+              foreach ($utiinfos as $utiinfo) {
+                $req3 = $bdd->prepare('SELECT message FROM messages2 WHERE uti_id_emmeteur = ? AND uti_id_destinataire = ? AND id_message = (SELECT MAX(id_message) FROM messages2) ');
+                $req3 -> execute(array($idemmeteur, $utiinfo['uti_id']));
+                $derniermess = $req3->fetch();
+                echo "<a style='color: white; text-decoration: none;' href='message.php?id_uti=".$utiinfo['uti_id']."'>
+                <li class='contact'>
+                <div class='wrap'>
+                <span class='contact-status online'></span>
+                <img src='".$utiinfo['uti_pdp']."' alt='' />
+                <div class='meta'>
+                <p class='name police'>".$utiinfo['uti_nom']." ".$utiinfo['uti_prenom']."</p>
+                <p class='preview police'>".$derniermess['message']."</p>
+                </div>
+                </div>
+                </li>
+                </a>";
             }
-
-
+}
+}
 
 
 
