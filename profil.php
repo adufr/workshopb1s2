@@ -65,8 +65,11 @@ if (isset($_GET['id'])) {
 
     </p>
 
-    <div class="btn-group">
-      <a href="message.php?id_uti=<?php echo $uti_infos['uti_id']; ?>"><button type="button" class="btn btn-primary btn-large">Envoyer un message privé</button></a>
+    <?php
+    if (isset($_SESSION['uti_mail']))  { ?>
+      <div class="btn-group">
+        <a href="message.php?id_uti=<?php echo $uti_infos['uti_id']; ?>"><button type="button" class="btn btn-primary btn-large">Envoyer un message privé</button></a>
+    <?php } ?>
     </br>
   </br>
 </div>
